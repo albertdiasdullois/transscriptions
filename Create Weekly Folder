@@ -1,0 +1,57 @@
+name: Create Weekly Folder
+
+on:
+  schedule:
+    # Runs every Monday at 00:00 UTC
+    - cron: '0 0 * * 1'
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+jobs:
+  create-folder:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create weekly folder
+        run: |
+          WEEK=$(date +%Y-W%V)
+          DIR="transcripts/$WEEK"
+
+          if [ -d "$DIR" ]; then
+            echo "Folder already exists: $DIR"
+            exit 0
+          fi
+
+          mkdir -p "$DIR"
+
+          cat > "$DIR/README.md" << EOF
+          # Week $WEEK Transcripts
+
+          ## Meetings
+
+          | Date | Meeting | File | Summary |
+          |------|---------|------|---------|
+          | | | | |
+
+          ## Notes
+
+          EOF
+
+          echo "Created: $DIR"
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            WEEK=$(date +%Y-W%V)
+            git commit -m "Add weekly folder for $WEEK"
+            git push
+          fi
