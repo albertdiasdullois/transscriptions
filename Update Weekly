@@ -1,0 +1,100 @@
+name: Update Weekly README
+
+on:
+  push:
+    paths:
+      - 'transcripts/**'
+      - '!transcripts/**/README.md'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Update README for changed folders
+        shell: bash
+        run: |
+          # Determine which weekly folders to update
+          if git rev-parse HEAD~1 >/dev/null 2>&1; then
+            mapfile -t CHANGED_DIRS < <(git diff --name-only HEAD~1 HEAD | grep '^transcripts/' | grep -v 'README.md' | sed 's|/[^/]*$||' | sort -u)
+          fi
+
+          # Fallback for workflow_dispatch or first commit: scan all folders
+          if [ "${#CHANGED_DIRS[@]}" -eq 0 ]; then
+            mapfile -t CHANGED_DIRS < <(find transcripts -mindepth 1 -maxdepth 1 -type d | sort)
+          fi
+
+          for DIR in "${CHANGED_DIRS[@]}"; do
+            WEEK=$(basename "$DIR")
+            echo "Updating README for $WEEK"
+
+            # Build table rows from transcript files
+            TABLE_ROWS=""
+            for FILE in "$DIR"/*; do
+              FILENAME=$(basename "$FILE")
+
+              # Skip README.md
+              [ "$FILENAME" = "README.md" ] && continue
+
+              # Parse date and meeting name from filename pattern: MM-DD Title
+              if [[ "$FILENAME" =~ ^([0-9]{2}-[0-9]{2})\ (.+)$ ]]; then
+                DATE="${BASH_REMATCH[1]}"
+                MEETING="${BASH_REMATCH[2]}"
+              else
+                DATE=""
+                MEETING="$FILENAME"
+              fi
+
+              # Extract summary from ## Kerninzicht section
+              SUMMARY=""
+              if [ -f "$FILE" ]; then
+                SUMMARY=$(awk '/^## Kerninzicht/{found=1; next} found && /^$/{next} found && /^##/{exit} found{print}' "$FILE" | head -5 | tr '\n' ' ' | sed 's/  */ /g' | cut -c1-200)
+                SUMMARY=$(echo "$SUMMARY" | sed 's/|/\\|/g')
+              fi
+
+              # URL-encode the filename for the link
+              ENCODED=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$FILENAME")
+
+              TABLE_ROWS="${TABLE_ROWS}| ${DATE} | ${MEETING} | [Link](./${ENCODED}) | ${SUMMARY} |"$'\n'
+            done
+
+            # If no transcript files found, use empty row
+            if [ -z "$TABLE_ROWS" ]; then
+              TABLE_ROWS="| | | | |"$'\n'
+            fi
+
+            # Write the updated README using printf to avoid heredoc indentation issues
+            {
+              echo "# Week $WEEK Transcripts"
+              echo ""
+              echo "## Meetings"
+              echo ""
+              echo "| Date | Meeting | File | Summary |"
+              echo "|------|---------|------|---------|"
+              printf '%s' "$TABLE_ROWS"
+              echo ""
+              echo "## Notes"
+            } > "$DIR/README.md"
+
+            echo "Updated: $DIR/README.md"
+          done
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add transcripts/*/README.md
+          if git diff --staged --quiet; then
+            echo "No README changes to commit"
+          else
+            git commit -m "Update weekly README with transcript details"
+            git push
+          fi
