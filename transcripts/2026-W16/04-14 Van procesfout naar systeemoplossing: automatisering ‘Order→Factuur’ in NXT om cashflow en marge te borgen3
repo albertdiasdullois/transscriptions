@@ -1,0 +1,128 @@
+2026-04-14T14:16:23Z
+
+##04-14 Van procesfout naar systeemoplossing: automatisering ‘Order→Factuur’ in NXT om cashflow en marge te borgen
+
+## Summary: ![PLAUD NOTE](permanent/ab14542be81548d0838cf2d647bfcf8c/summary_poster/card_20260414123813-v2@af152fab920ae66263017a_20260414123919_f290dd07.png)
+
+## Kern-Synopsis
+
+De onderneming laat structureel omzet liggen omdat het facturatieproces niet door het systeem wordt gedreven maar door ad‑hoc handwerk: in NXT staan voltooide orders (“completed revenue”) zonder verstuurde factuur, prijzen en kosten worden niet consequent vastgelegd (artikelen, lunchpakketten, trainingsopties), en er is geen betrouwbare sales-ledger‑export om achterstanden te monitoren; dit is geen capaciteitsprobleem maar een proces- en cultuurfout waarbij één persoon het knelpunt vormt en basisdigitalisering (SharePoint, automatische run) wordt omzeild. De bewijzen zitten in concrete casuïstiek: honderden facturen (bv. 672; ca. €849k) met delen van opbrengst en kosten niet geboekt, standaard micro‑charges (bijv. €7–€11 per cursist) die bijna niemand betwist maar niet worden doorbelast, Outlook‑e‑mails (Pay & Play) die niet klikbaar waren en pas door Michal zijn opgepikt, en orders in NXT die klaarstaan zonder factuurnummer. De inzet is hoog: cashflow is onvoorspelbaar, budgetvergelijkingen worden vervuild doordat januari-facturen in maart vallen, en management denkt in symptoombestrijding (meer mensen, losse controles) in plaats van oorzaak (automatiseren “order→factuur”, prijsregels borgen, en een standaard sales-ledger). Wij zijn geen mensen- maar een systeemprobleem aan het managen; wij moeten de discipline afdwingen: prijzen vooraf definiëren (incl. groepsprijs = “vorig jaar totaal +5%”), micro‑charges standaardiseren, en NXT-gegevens automatisch factureren zodat administratieve rollen ondersteunend worden in plaats van cruciaal.
+
+## Procesfout naar Systeemoplossing: van NXT‑order naar verzonden factuur
+
+- Wat er gebeurt
+  - Voltooide jobs worden in NXT als order/“completed revenue” geregistreerd, maar er wordt geen factuurnummer gegenereerd en niks verzonden.
+  - Prijscomponenten (artikelen, tokens, lunch, extra’s) ontbreken of zijn niet gestandaardiseerd, waardoor marge onbenut blijft en reconciliatie stokt.
+  - De sales ledger is niet toegankelijk als operationeel stuurinstrument; Henk is “te druk”, Michal kan het wel ontsluiten.
+  - Handmatige gewoontes (planningen op een bord i.p.v. gedeelde files) vertragen, vergroten fouten en creëren afhankelijkheid van één persoon.
+- Waarom het misgaat (diagnose)
+  - Proces is persoonsafhankelijk, niet systeemgedreven: “zij” verstuurt of niet; er is geen automatische trigger op status “job completed”.
+  - Data zitten al in NXT, maar er is geen workflow die op tijd factureert of afwijkingen signaleert.
+  - Cultuur kiest voor de “lange route” (board, handwerk, uitstel), digitale standaarden (SharePoint, regels) worden niet afgedwongen.
+- Wat het oplost
+  - Een pipeline “Order (NXT) → Factuur (automatisch, 08:10)” met prijsregels elimineert achterstanden, maakt cashflow voorspelbaar, en reduceert discussie tot uitzonderingen.
+  - Het sales-ledger‑dashboard maakt doorlooptijd en achterstanden zichtbaar per klant/periode en dwingt dagelijkse discipline af.
+
+## Margehefbomen die nu op tafel liggen
+
+- Standaard micro‑charges met lage frictie
+  - Lunchpakketten (€11 p.p.), verbruiksartikelen (€7 p.p.), trainingsopties/“paracursisten” en artikelen/tokens: <1% betwist, bijna pure marge.
+  - Kredietnota’s zijn statistisch irrelevant t.o.v. volume; kern is dat 19.500 van 20.000 tickets geen credit vragen.
+- Groepsprijs-standaardisatie
+  - Voor groepen: neem “eindtotaal vorig jaar” (incl. opbouw) +5% en zet dat als één bundelprijs; stop met factureren per leegte/spot.
+- Vooraf factureren waar kan
+  - Consultancy bij Cura: factuur bij ondertekening opdracht (“opdracht = invoice”); toepassen waar operationeel haalbaar om kaspositie te verbeteren.
+
+## Data, Prijs en Controle: concreet maken
+
+- Data-werk
+  - Sales ledger uit NXT draaien (per klant/periode/status) om: a) openstaande “completed not invoiced” te isoleren, b) doorlooptijd te meten, c) top 5-klanten te monitoren.
+  - Factuurachterstand per maand dichttrekken om budget vs. realisatie zuiver te maken (stop “jan in maart”).
+- Prijs- en regels
+  - Zet micro‑charges en artikelen als verplichte prijsregels in het systeem (default aan; uitzonderingen via credit).
+  - Leg groepsprijsregel en 5%-uplift vast; prijscommunicatie vooraf naar klant.
+- Controle & cultuur
+  - Verplaats zichtbaarheid van planning en orders naar gedeelde systemen (SharePoint/NXT), niet naar borden of persoonlijke bestanden.
+  - Maak de rol “invoicing” uitvoerend: het systeem triggert; mens controleert uitzonderingen.
+
+## Politiek/Organisatie: mensafhankelijkheid afbouwen
+
+- Persoonsrisico
+  - Eén administratieve medewerker houdt de keten op; ze kan haar eigen proces niet uitleggen; productie draait door zonder accountmanagers – het probleem zit in backoffice‑discipline.
+- Besluitlogica
+  - Henk is geen bottleneck oplosser (te druk); Michal toont eigenaarschap (vond Outlook‑bug) en is de operationele hefboom voor automatisering.
+- Richting
+  - Transitie naar Cura als “single source of truth” is aantrekkelijk, maar de eerste winst ligt in NXT‑automatisering + ledger‑transparantie; daarna migreren zonder nog meer vertraging.
+
+## Acties
+
+**@Michal**
+- [ ] Ontsluit een standaard sales-ledger export uit NXT (per klant/periode/status “completed not invoiced”) en geef een 30‑min walk‑through aan twee backoffice‑medewerkers - [TBD]
+- [ ] Prototypeer een automatische “order→factuur” run in NXT (dagelijks 08:10) voor Fire Control, inclusief logging van uitzonderingen - [TBD]
+- [ ] Corrigeer en valideer de Pay & Play‑mail rendering voor Windows Outlook; herverzend de niet‑klikbare batch met een korte verklaring - [TBD]
+
+## Transcript
+00:00:03
+Als je kijkt naar bijvoorbeeld, laten we zeggen, laten we gewoon fire control nemen, 2026. Dus beide van deze bedrijven zijn nu geïntegreerd in het bedrijf. Als we deze twee bedrijven nemen, dat, en ik ben alleen naar de eerste pagina gegaan.
+00:00:36
+Dit werkt niet, ik heb geen wifi. Misschien refreshen. Ik klik er nu op, denk ik. Ja, dat is beter. Dus dit is, laten we het gewoon Q1 noemen.
+00:01:08
+Dat, dat. Ik heb alleen de eerste pagina gedaan. In de eerste kwartier. Ze hebben geen kosten opgegeven. En we zijn meer geïntegreerd dan een jaar. Sorry, wat bedoel je? Fire Control en Berkeley hebben die artikelen nooit opgegeven. Ja, vooraf. En dit is wat je extra maakt?
+00:01:39
+We hebben de kust niet verteld. Ja, dus dat is € 375.000,- Ja, dus gecombineerd met de... Nee, dat is het. € 260.000,- Oldenbuis token. Oh ja, ja, ja. € 111.000,- artikelen en een artikelsprijs van € 228.000,- dus dat is je verdiening je verdiening door dat te doen ja en ik zou kunnen blijven gaan hier er zijn veel en ik deed alleen de eerste pagina hier ja zoals wanneer we dit item hier.
+00:02:10
+we introduceren dit item dit jaar talk etiquette groepen het is heel moeilijk de waarschijnlijke prijs van de klant is 84 cent niemand ringt maar niemand zal dat op de interwebben noteren. training waar is het kan het niet more difficult of course i don't know i think we were to do, let's say for example we've got in training let's just say we look at.
+00:02:45
+share a low let's just say we we take out the top five customers right we take. 35 control, gecombineerd is het plus of minus tot nu toe is het. 672 invoices en het is 849.000 ze is nog niet goed in de invoices maar toch als je begint te rekenen op al deze cursussen.
+00:03:19
+en misschien niet ipsy de brugge of sarah low misschien. maar zelfs als je het deed, ze komen terug je zegt sorry we opdaten onze ic het gemakkelijke is is dit sinds de 1e mei we opdaten onze ic er is een glitch sorry, maar dan fixeer je het maar al deze andere mensen.
+00:03:49
+als je ze 7 euro betaalt, blistergebruik, blistergebruik, voor elke cursus, minder dan 1%, geen verantwoordelijkheid. Ja, maar als we dat hele beeld daar hebben, dan is het gemakkelijker voor ons om te zien op welke dial we omkomen om de rekening en de rekening op te schakelen.
+00:04:21
+Als we 11 euro kopen voor lunchpakket. Goedemorgen. Maria, dat is Albert, mijn vrouw. Hoi. Heel erg bedankt. Albert, heel erg bedankt. Heel erg bedankt. Eet smakelijk. Alles zit nog in de vaatwasser volgens mij Everything is still in the...
+00:04:55
+Is he doing chores then? Running around all day? Ja, he was net with personal chores Half of stylists If we introduce it If you think about it right Let's just say we have 672. Invoices If we were to start Charging paracursists Sending those, Paracursisten, Als je 11 euro voor de lunchpakket betaalt.
+00:05:30
+De nummer is zo klein Wanneer ze opkomen Oh sorry ja Ik heb dat laatste jaar niet betaald De kosten zijn opgeruimd We moeten je voor dit en dat betalen Je zou een e-mail hebben gekregen, Een paar maanden geleden over dat, Ze vonden het niet goed, oké? Dan krijg je ze de kredietnoten en zo. Het is gewoon... Het is allemaal marge. Elke keer dat we het hier doen, zeggen ze, ja, we krijgen veel kredieten, we krijgen veel kredieten. Maar de kredieten zijn relevant.
+00:06:02
+Want kijk, we hebben 20.000 tickets gedaan. Dus, je maakt 500 kredieten. Het zijn de 19.500 die je niet deed. Weet je? Hoe kunnen we die invoices uit het systeem brengen? Dat is geweldig. Ik heb geen idee hoe Amix Day werkt. Moet ik Michal vragen? Kan hij me helpen met dat? Hij vond gisteren uit dat alle, Pay & Play mails werden gestuurd.
+00:06:34
+naar mensen met Windows Outlook. De e-mail is niet klikkbaar. Hij heeft dat opgepakt. I'll ask Michal if he can, because if I ask Henk, he's just gonna say he's too busy. Well, how do we, I'm trying to think, how does, there has to be a way of just running the sales ledger, it can't be that difficult, let's get Michal, get Michal to show you, so that the next time that we want to get in, we can get in together ourselves, because then we can just do that with all the things, because, like, we automize that and we just say basically, like, make an analysis of all the invoices,
+00:07:12
+on a, just, always. de vondavolle hotel last year was 890 euro's right but this year the way they.
+00:07:46
+got 890 was 600 for the bastards training plus 4 guys at 70 euro's each right and that's how they got to whatever it was that number we just take that end number add 5% and just make that the price the group price yeah that's the price that's the thing for us it was always they're paying for empty spots, but what I mean but what I'm for example is let's say if we if we take a look.
+00:08:18
+here let's say on the bank. so let's just say whoever that guy there is if that was his invoice this year yeah whatever way it's broken down it's actually an old client of mine that went to find it right okay so however that invoice is if we strike the price of the same thing there's nothing initially yeah i think yeah.
+00:08:51
+but i think bruce id is going to help understand why is she not got those invoices gone because yeah the prices are in the system so if you take a look you take a look here right. what's the reason these aren't sent but she made those already or.
+00:09:26
+i don't know i mean the the revenue is coming from something, Het was, so what am I looking at right now, what is this, is this an order, or? Come on, click it in here, I'm gonna get it, I'm also not. Why is this thing trying to link into your phone when you're not minding it? Probably a family thing or something like that.
+00:09:58
+So look. So, but, but, so this is like an order, but it's not been... This is the job. Okay? This, this invoice hasn't been sent. Because there's no invoice no more. Yeah. But it's ready to go. But where is this generated? Is it generated in NXT? Where is this data coming from? From NXT. Okay. Effectively... We should be, we're able to invoice at ten past eight.
+00:10:30
+But if this is already in there, then I'm wondering, this should be something we could automate, right? If it's already there. This has been put in the system as an order. Okay, look, that job is done. That's what's called completed revenue. But for some reason she hasn't sent it out. Oh yeah, this is fire control. Well, I don't know if it's fire control. Yeah, yeah, because it's a bomb. I'll take a look at fire control for you. Am I in the right area?
+00:11:02
+2026. Let's just take a test. Fabry, keep following this fucking Wi-Fi. Yeah, it's Wi-Fi. Ja, maar dat is waarom we moeten begrijpen, de proces, wat is ze aan het doen?
+00:11:58
+Daar zijn ze. Hoe kan ze je niet laten zien? Maar het maakt het moeilijk, want nu krijg je dingen van januari in maart ingewikkeld, dus het is moeilijk om te vergelijken, zijn we aan het ontvangen van budgetten en zo, het is krap op dit moment.
+00:12:30
+Dan nogmaals, Bruce's idee om gewoon alles in Cura te transformeren, dan waar... Als je daar zit en je zegt, wat is de reden dat dat niet ingevoerd is? Ja, ik heb het niet aangekomen. Wat de fok is het om te aangekomen? Het is daar. Ja, maar ik moet binnenkomen in wat de stappen zijn die ze moet doen. Dat is waarom ik niet zeker ben. Ik denk dat we gewoon moeten kijken naar wat we uitschrijven. En hoe we het willen doen.
+00:13:01
+...en stoppen om te begrijpen wat ze doet. Ze kan het je niet vertellen, want ze weet het niet. Maar zou het duurzaam zijn om ze te laten gaan? In het einde? Ze zou duurzaam zijn, want ze is daar al een lange tijd. Maar zoals... Transitiefeer... Ja, maar de realiteit van de zaak is... Weet je wat ik bedoel? Ze is duurzaam om daar te hebben, maar ze is niet producer. Ja, ja. Ze doet al die dingen, weet je wat ik bedoel? Cancer, als je het niet uitmaakt, gaat het je dood.
+00:13:33
+En zoals Claudio weet, is het een normaal contract. Het eindt op het einde, als we het eindt. Ja, het is nog niet een permanente contract. We moeten nadenken over, ik denk... We moeten nadenken over alle andere negatieve mensen in Italië. Ik zag, ik wist niet, maar ik wist niet wat ze aan het maken hadden. Ik zag vorige week wat ze aan het maken hadden. Waarom gaan ze niet weg? Iedereen helpt ons. Ik begrijp het nog steeds niet. Ik garantiere je, Leon is weggegaan voor een betaling.
+00:14:05
+Ja, hetzelfde als Wander. Mijn situatie is dat de reden dat deze jongens gaan is dat ze niet zouden hebben ontdekt. De oude man zit om te praten, koffie te drinken en zo. Ja, ik ben bezig, ik moet hierheen. Ze doen het niet. Ik vertel het je. Je vraagt ze, wat is de verhaal? Ze zeggen, het is weggegaan, wat gaan we doen? Ze zeggen, niets is veranderd. Ze zeggen, ze is weggegaan, maar niets is veranderd. We doen nog steeds dezelfde verdiening.
+00:14:35
+Ja, ja, ja, maar we hebben geen accountmanager. Dat hebben we nog nooit gedaan. Heb je dat gezien? Hoeveel klanten, sinds Wander, hebben een letter gegeven en gezegd, ik ga weg? Je weet het niet. Maar het lijkt er niet een probleem te zijn, want elke keer dat ik daar ga, is het plek vol. En dit is de ding, het is de ontdekking. Als je zegt dat je bezig bent, dan ben je bezig.
+00:15:07
+Ja, maar dat is waar. Ik denk dat er vijf cursussen per dag zijn. Laten we het 10 noemen. 5 in the morning, 5 in the thing. It's 10 invoices. Literally, while you put the coffee on, you could have them done. But that's why I know, if I would put Yvonne on that spot, within a month she would have fixed it. But think about this, we know what the price is. We've already told the customer, you've got 10 guys, the cost is going to be 870 euros. Thanks. Literally, the night before we can send that invoice out.
+00:15:41
+In the morning. But the same as with the consultancy, the consultancy job, at Cura, they pay as soon as they sign the opdracht. And that's something we have, but that's the thing. There's thousands of things we need to... No, we always invoice this customer that way. It's just bullshit. Seriously, cans of coke used to be the smaller fat ones. right now they're the long thin ones do you still buy coke if you're into coke yes.
+00:16:15
+it's i'm telling you you can see it in the thing like and i've been there a year and a half and it keeps them why is the invoice nothing yeah yeah she you know what it's government in london via sydney yeah but yes yes the fucking long way around it don't do it like think of it is i went in when this is what are you doing i've got the planning now on my computer so now i'm going to put it on the board i says why are you putting it on the board so everyone can see it why don't you just share the file with everybody what do you mean he says well just put the file.
+00:16:49
+on the fucking sharepoint he says to be honest i'm sitting here i can't read that for the uh for the uh front of course we need someone at fire control to be the host but the other people would you have a problem for them working remote as well. Het is niet de persoon die de invoicing doet, het is de systeem die de invoicing doet.
+00:17:49
+Tot ziens, leuk je te ontmoeten. Ik ga eerst maar nadenken op de campagnes die we zouden willen doen en dan moeten we dit gaan vullen en als dit ingevuld is en dan wel alvast het idee van je post erin zetten zoals ik het hier ook heb gedaan en als je het hebt gegenereerd en de afbeelding erbij dan kan je hem gewoon op paars zetten dan weet je dat hij al klaar is dat hij alleen nog maar gepost is.
