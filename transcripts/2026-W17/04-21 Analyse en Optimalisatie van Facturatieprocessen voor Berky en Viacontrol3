@@ -1,0 +1,328 @@
+2026-04-21T16:01:04Z
+
+##04-21 Analyse en Optimalisatie van Facturatieprocessen voor Berky en Viacontrol
+
+## Summary: # Analyse en Optimalisatie van Facturatieprocessen voor Berky en Viacontrol
+
+![PLAUD NOTE](permanent/ab14542be81548d0838cf2d647bfcf8c/summary_poster/card_20260421150606-v2@68686507fe5cbeb01fac41_20260421150758_cb6878f9.png)
+
+
+## Doelstelling en Context van de Bijeenkomst
+De bijeenkomst richtte zich op een nauwkeurige, stapsgewijze ontleding van de facturatieprocessen bij zowel Berky als Viacontrol. Doel: volledige procesinzicht creëren zodat Shadira gerichter ondersteund kan worden (o.a. door Yvonne), het team gedeeld begrip opbouwt en samen kan meedenken over verbeteringen en een beheerste overgang naar autofacturatie. Shadira werd gevraagd haar werkwijze expliciet, concreet en per stap uiteen te zetten, te beginnen met Berky.
+
+## Analyse van het Facturatieproces bij Berky
+- Scope en klantkaders:
+  - Berky factureert aan Cerelo voor twee typen: trainingen en ontruimingsoefeningen. Trainingen lopen in de kern al via een geautomatiseerde route; ontruimingsoefeningen zijn (nog) handmatig.
+  - Planning wordt beheerd in Excel (op SharePoint). Facturatie vindt plaats per cursus.
+
+- Handmatige workflow ontruimingsoefeningen (huidig):
+  1. In de Excel-planning achterhalen welke oefeningen gefactureerd moeten worden (jaren 2023/2024).
+  2. Kostenplaats zoeken per locatie; als onbekend, per mail opvragen.
+  3. In NXT: naar het Cerelo-contract (klantnummer), Add order, type DOTR (opleiding/training); kostenplaats invullen bij Referentie, artikelnummer bij Item.
+  4. Opslaan en op de vervolgpagina de trainingsdatum toevoegen.
+  5. Verwerken en via de knop ‘versturen’ de factuur verzenden.
+  - Shadira maakt losse facturen per oefening. De kostenplaats komt zichtbaar op de factuur; factuurontvanger blijft de financiële afdeling van Cerelo (hoofdlocatie), kostenplaats onderscheidt de toerekening.
+
+- Kernknelpunt: kostenplaatsen
+  - Kostenplaatsen zijn per locatie vast over de jaren en verschillen per locatie; PO-nummers wijzigen wel. Momenteel moeten kostenplaatsen vaak handmatig opgezocht worden (soms per factuur openen).
+  - Voorkeursoplossing: kostenplaatsen per locatie in NXT (of database) vastleggen, zodat autofacturatie de juiste kostenplaats automatisch toont op de factuur.
+
+- Status en systeemobservaties NXT:
+  - Status ‘Invoicing’: factuur gegenereerd, nog niet verzonden. ‘Invoiced’: verstuurd.
+  - Automatische orders (maart) zijn onjuist op locatieniveau aangemaakt i.p.v. op contractniveau (contractklant 588-250). Eenmaal op verkeerde klant aangemaakt is niet meer aanpasbaar; mogelijk staan orders nog open doordat leveren/factureren tot eind maart was stopgezet.
+  - De lijst met te corrigeren orders is gedeeld in de chat.
+
+- Autofacturatie ontruimingsoefeningen (vooruitblik):
+  - Kan vanaf 1 mei lopen, mits de oefeningen opnieuw en juist worden ingevoerd (invoeren was eerder gestopt).
+  - Voorwaarden: factureren op contractniveau (niet locatieniveau) en kostenplaatsen per locatie vooraf configureren.
+
+- Overige details:
+  - Er is een vaste contactpersoon bij Cerelo’s servicecentrum (Ryan) voor facturatieafstemming.
+  - Februari-status: trainingsfacturen grotendeels rond; ontruimingsoefeningen mogelijk nog open. Shadira controleert of februari (en eventueel januari) nog gefactureerd moet worden en stemt dit af via Teams (Berkie-kanaal).
+
+## Analyse van het Facturatieproces bij Viacontrol (Fire Control)
+- Overgang naar autofacturatie (open inschrijvingen):
+  - Per 1 april geactiveerd: systeem genereert orders; Shadira hoeft te controleren en op ‘versturen’ te klikken. Door achterstanden is het verzenden nog niet structureel opgepakt.
+  - Per 1 mei zullen open inschrijvingen via het portaal lopen.
+  - Presentielijsten dienen uitsluitend als controlemiddel (afvinken namen); cursistnamen komen niet meer op de factuur. Abbie stuurt/ heeft gestuurd klantcommunicatie hierover; klanten vinden namen in de portal.
+
+- Handmatig proces (open inschrijvingen) tot 1 mei (beknopt):
+  1. Planning raadplegen en presentielijsten afdrukken.
+  2. In Cursisten Manager controleren (klantnummer; nieuwe klanten doorgeven aan NXT en terugschrijven).
+  3. Tab ‘factureren’: deelnemers definitief zetten en opslaan (data naar NXT).
+  4. In NXT: ordernummer koppelen, namen en datum controleren, prijs (indien nodig) vastleggen, verwerken en ‘versturen’.
+  - Vanaf 1 april controleproces: lijst met automatisch gemaakte orders (via Danny), klant opzoeken in NXT, verifiëren of training heeft plaatsgevonden, en ‘versturen’.
+
+- Groepstrainingen (maatwerk):
+  - Complexer door ontbrekende vaste prijsafspraken en variabele afspraken per klant. Nog veel controle vereist: prijsvalidatie en juiste facturatie-eenheid (per inschrijving vs. per groep).
+  - Rollen: Albert en Jordi maken prijsafspraken bij klanten met uitzonderingen. Een aantal bedragen in NXT is tijdelijk op 5000 gezet bij ontbrekende prijsdata om onderfactureren te voorkomen.
+  - Specifieke klantafspraak: Paarmeijer gebeurt handmatig via lijstaanlevering, niet op cursusdatum factureren.
+
+- Huidige status Viacontrol:
+  - Shadira werkt aan open inschrijvingen van maart (t/m 16 maart gereed). Open inschrijvingen februari zijn afgerond.
+  - Maatwerk februari moet nog gefactureerd worden. De eerste drie ‘gouden klanten’ voor heel het jaar staan in NXT (geschikt voor autofacturatie).
+  - Twee geannuleerde inschrijvingen moeten gecontroleerd worden of ze terecht gefactureerd zijn.
+
+## Status van de Facturatieachterstand en Prioritering
+- Berky (Cerelo):
+  - Januari en februari: trainingsfacturen verstuurd.
+  - Grootste open punten: ontruimingsoefeningen februari en maart (en mogelijk januari). Controle en bundeling in één maandfactuur (met kostenplaats per datum) worden met Ryan afgestemd.
+
+- Viacontrol:
+  - Achterstand in februari (maatwerk) en maart (open inschrijvingen deels in behandeling; maatwerk nog open).
+  - Cashflowprioriteit: eerst de financieel grotere maatwerkfacturen van februari factureren, pas daarna minder lucratieve open inschrijvingen van maart. Doel: geldstroom versnellen en up-to-date blijven.
+
+## Actieplan voor Implementatie en Ondersteuning
+- Transparantie en regie:
+  - Shadira levert een overzicht aan van alle resterende handmatige facturaties (Berky en Viacontrol), uitgesplitst in open inschrijvingen en maatwerk.
+  - Statusupdates en vragen over februari en (opstart)autofacturatie worden centraal via Teams (Berkie-kanaal) gedeeld.
+
+- Correcties en inrichting:
+  - Maart-orders uit de autofacturatie voor Berky die op locatieniveau staan, omzetten naar contractklant 588-250 (zodra mogelijk; afhankelijk van orderstatus).
+  - Kostenplaatsen per locatie in NXT configureren zodat ze automatisch op de factuurregel komen en handmatig zoeken vervalt.
+
+- Operationele ondersteuning:
+  - Danny levert lijsten met automatisch aangemaakte orders (o.a. april) aan zodat Shadira gericht kan controleren en verzenden.
+  - Vier-ogencontrole op exceptionele bedragen en op cases zonder bekende prijzen.
+  - Overlegmoment op donderdag over de status en het controleproces rondom autofacturatie; waar nodig schermdeling met Yvonne voor inzicht en begeleiding.
+
+## Actielijst
+- @Shadira
+  - [ ] Lever een overzicht aan van de stand van zaken in de handmatige facturatie voor Berky en Viacontrol, met onderscheid open inschrijvingen vs. maatwerk - Morgen einde dag
+  - [ ] Controleer of de ontruimingsoefeningen van februari (en eventueel januari) voor Cerelo nog gefactureerd moeten worden en communiceer dit via Teams (Berkie-kanaal) - [TBD]
+  - [ ] Indien de ontruimingen van februari nog moeten: direct meenemen in de facturatie - [TBD]
+  - [ ] Neem contact op met Ryan (servicecentrum Cerelo) om af te stemmen of alle oefeningen op één maandfactuur mogen met kostenplaats achter iedere datum - Morgen
+  - [ ] Schakel met Danny over de oplossing voor de maart-ordermigratie (locatie → contract) en bepaal je rol hierin - Morgen
+  - [ ] Controleer of twee geannuleerde inschrijvingen terecht gefactureerd zijn (via manager/Abbie indien nodig) - [TBD]
+  - [ ] Vanaf 1 april: controleer automatisch gegenereerde orders voor open inschrijvingen en klik op ‘versturen’ waar correct - [TBD]
+  - [ ] Verwerk de Excel-lijst met klantafspraken en prijzen in NXT zodat prijzen automatisch worden opgehaald - [TBD]
+  - [ ] Zet periodieke statusupdates en vragen over februari en (auto)facturatie in het Teams Berky-kanaal - [TBD]
+  - [ ] Prioriteer het factureren van maatwerk februari (Viacontrol) om cashflow te versnellen - [TBD]
+
+- @Danny
+  - [ ] Lever een lijst aan met ordernummers van automatisch aangemaakte facturen (april) aan Shadira voor controle - [TBD]
+  - [ ] Zorg voor een compleet overzicht met alle inschrijvingen t.b.v. controle - [TBD]
+  - [ ] Onderzoek en richt in: kostenplaatsnummer per locatie in NXT, zichtbaar op de factuurregel - [TBD]
+  - [ ] Controleer voor de april-autofacturatie of geannuleerde inschrijvingen niet onterecht gefactureerd worden - [TBD]
+  - [ ] Neem deel aan het donderdagsoverleg over de (auto)facturatie - Donderdag
+
+- @Albert
+  - [ ] Maak (samen met Jordi) prijsafspraken bij klanten met grote uitzonderingen (groepstrainingen) - [TBD]
+  - [ ] Plan en neem deel aan het donderdagsoverleg over de status rondom de autofacturatie - Donderdag
+  - [ ] Bel even in bij Yvonne voor schermdeling zodat Danny kan meekijken waar nodig - [TBD]
+  - [ ] Help plannen om de autofacturatie stabiel te laten lopen en de achterstand weg te werken (in afstemming met Danny en Yvonne) - [TBD]
+
+- @Jordi
+  - [ ] Maak (samen met Albert) prijsafspraken bij maatwerkklanten met uitzonderingen - [TBD]
+
+- @Yvonne
+  - [ ] Neem deel aan het donderdagsoverleg over de autofacturatie - Donderdag
+  - [ ] Werk mee aan het plan om de autofacturatie te stabiliseren en de achterstand weg te werken (met Albert en Danny) - [TBD]
+
+## Transcript
+00:01:16
+Hé, Halbert. Lenny! Even je middag. Hé, jongen. Heb je nu tijd? Zeker. Oké, ze zijn even... Hij komt er ook aan. Dan heb je die ook even gevraagd. Zo. Dan is dit allemaal even hier nog. Zeker.
+00:01:50
+Ik ga even even om Danny.
+00:02:25
+Gaan we hier zitten? Ja, ik denk dat dat om met z'n drieën achter Sjadiris en Jupiter zit. Maar dan hebben we denk ik wel een computer nodig. Ik heb geen idee, laten we eerst even zo beginnen. Hey Danny. Hallo. Zoals ik zei, om meer inzicht te krijgen bij het facturatieproces van Viacontrol en van Berkey. Zodat ook Yvonne je kan gaan helpen daarbij.
+00:02:58
+Maar ook voor mij en Danny om gewoon beeld te krijgen bij de processen. En dus daar kunnen meedenken. Aan jou de vraag. Kan je stap voor stap letterlijk uitleggen. Als we beginnen met Berkie dan. Wat je doet om de factoratie rond te krijgen. Kan je jouw dingen even op mute zetten Danny. Dus wees zo. Specifiek mogelijk, want dat weet Yvonne ook, he. Bij Berky. Ja, laten we eerst Berky doen.
+00:03:30
+En dan laten we de trainingen, want het zijn natuurlijk... Als we Cerelone nemen, zijn twee dingen, he. Dus we maken een trainingsfactuur en een... Voor de ontruimingsoefeningen. Voor dingen, ja, klopt. Voor de trainingen, dat gaat toch, zeg maar, automatisch? Zou je dat op de wegen laten? Laten we het gewoon... Dus voor de ontruimingsoefeningen... Kijk ik gewoon in de planning, in de planning van Berky. Ja en waar zie je dat?
+00:03:60
+Dus waar kijk jij? Excel is van Berky, ja. En kijk in NXT. Als ik mijn laptop pak, en ik open daar NXT in. Dan ga ik er vanuit dat jij daar alles in kan wat jij nu ook achter jouw pc doet? Ja. Zodat je hem even erbij kan pakken.
+00:04:31
+Ja, dan kunnen we het zien. Maar nu dus je zei, je kijkt naar de planning in Excel. Ja, en dan in NXT. Maar dan, wat bekijk je in die planning? Ja, de cursus, dus welke cursus ik dan moet factureren. Dus ik factureer vanuit de planning. Ja. Dan pak je één cursus, of kijk je naar een week, kijk je naar een maand? Ik pak het per cursus.
+00:05:01
+Vanwege de kostenplaatsen. Want die zijn niet gelijk. En ik moet zeggen, het zit niet overal. Dus het staat niet vermeld bij die training van, dit moet op kostenplaatsen en zo. Dus ik kijk, in die planning kan je zeg maar in 24 en 23 enzo allemaal kijken. Dus ik zoek zeg maar de locatie op om te kijken of ik nog iets kan vinden. Ik heb ook in NXT gezocht en hier en daar een kostenplaats ook gevonden. Maar ja, dat was echt elke factuur openmaken om daar achter te komen.
+00:05:35
+Dus op een gegeven moment dan was ik daarmee gestopt, want dat is best veel om te doen. Maar ik heb wel een paar zeg maar kunnen vinden. Maar die kostenplaatsen, is dat dan gekoppeld aan een locatie, aan een regio, aan... Ik denk dan aan de locatie. Nou, daar hoor ik jou zeggen, ik heb enkele kostenplaatsen terug kunnen vinden. Ja. Stel dat je geen kostenplaatsen terugvindt. Dan stuur ik een mailtje, heb ik een mail gestuurd naar wie? Gewoon iemand gezocht en een mail gestuurd.
+00:06:05
+Van misschien moet ik helemaal niet bij u zijn, maar ik heb het nodig. En daarop heb ik weer... mail ontvangen waar het op moet. Maar die kostenplaatsen, want je zegt ik zoek het terug naar andere jaren, die zijn al jaren per locatie hetzelfde? Ja, kostenplaatsen zijn hetzelfde. Kijk, PO nummers veranderen, maar kostenplaatsen blijven hetzelfde. Dan kijk ik even naar Danny, dus als we al zouden kunnen kijken dat die kostenplaatsen in een database of.
+00:06:36
+nxt, Zouden kunnen plaatsen zodat het niet meer erbij gezocht hoeft te worden. Hoeft niet nu, maar dat we dat even opschrijven als stakersactie. Oké, dus je kijkt naar de cursus, je zoekt de kostenplaats erbij vanuit die Excel-planning en dan? En dan in NXT kies ik dan verwerking. Ik kies de artikelnummer. Even kijken, je kiest dat wel. Management.
+00:07:10
+Artikelnummer? Management, customer... Als je deelneemt aan deze meeting, dan kan je je scherm delen. Ja, ik zal er zo even inbellen. Als ze weer terug is. Ik bel jou even in Yvonne, en dan kan je even je scherm delen. Dan kan Danny het zien. Oh, ik moet Danny inbellen? Nee, ik bel jou wel in. Dus als jij nu opneemt... Gaat het als het goed is nu over bij jou?
+00:07:41
+Teams? Nee. Nee, ik krijg het ook niet toegevoegd. Ik weet niet waar dat ligt. Misschien omdat ze offline of zo is. Oh, dat zou kunnen dan met Teams nog uitstaat. Ja, als je die even... Hij is even traag. Teams misschien wel niet. Andere breeuw?
+00:08:12
+Ja. Zo irritant. Oh, hij is gewoon ontzettend raar, Teams. Ja, dan zal het schermdelen waarschijnlijk geen optie zijn. Ja, wacht maar. Is je computer aan het updaten of zo? Nee. Nee, dat komt omdat ze daar gebruik maakt van de wifi en niet van de begabbeld internet. Dat is blij van bekend probleem, dus waarschijnlijk dat ze daar gaat proberen een scherm te delen.
+00:08:43
+en dat hebben we helemaal niet gekozen. Even kijken, bel nog eens in Albert. Ja? Yes. Ja, dan doe ik deze even uit. En dan moet die... Oh, dan moet die... Ik moet de speaker uit zetten al. Delen, delen. Zo, beter?
+00:09:14
+Ja. Ja, oké. En dan moet je NXD even delen. Zie jij Danny? Ja. Dus je gaat dan.
+00:10:15
+En dan wordt het handmatig order toevoegen. Dus even kijken, je gaat naar heren, serenlo contract. Ja, dus dit nummer eigenlijk meer. Nou, en dan order. Kan dit ergens anders naartoe? Klik eens op dat minnetje. Add order. En dan hier wordt het een DOTR, dus opleiding en training doe ik dan.
+00:10:54
+Hier komt de kostenplaats. Even kijken, waar komt de kostenplaats? Bij referentie. Je kan jouw microfoon thuis gewoon aanzetten hoor, ik weet niet of Danny je nou hoort. Ik heb... ja dus je gaat naar de klant daar kies je daar maar doe je handmatig die order aanmaken ja en.
+00:11:24
+hier komt bij je item komt de klanten nummer en die voor jezelf artikel nummer sorry ja ja die moet je dan. Is het artikelnummer. Maar die facturatie loopt in principe vanzelf uit behalve de oefeningen. Ja, maar dit gaat dan over de oefeningen, Danny. Het principe hoeft dat vanaf 1 mei, want die kunnen dan ook gewoon automatisch gefactureerd worden.
+00:12:01
+Maar dan moet ik die wel erin gaan zetten. Want ik was gestopt met invoeren van de oefeningen. Maar later, sorry, maar laten we heel even, ik ben gewoon benieuwd, dus. Ja, maar dat kunnen we beter, bijvoorbeeld een paar meiden gaat automatisch. Nee, maar want ik. Het oordeel wordt niet aangemaakt op de allerhoogste niveau, dus op contractniveau. Maar is dat voor de oefeningen zo, Shadira, of is dat voor de trainingen zo?
+00:12:38
+Dus je kiest net. Voor die ontruimingsoefeningen. Die moet op contractniveau worden gefactureerd. Ik heb ze altijd op dat nummer gefactureerd. Ik weet niet of er nu ineens een onderscheid is daarin. Maar de trainingen doe je ook op dat nummer. Heb ik ook altijd op dat nummer gedaan, op dat klantnummer. Maar dan gaat het factuur dus volgens mij altijd naar dezelfde. Die gaat altijd naar die. Ja, klopt. En kostenplaats maakt het verschil natuurlijk.
+00:13:09
+Op het moment dat het daar binnenkomt, dan weten ze op welke kostenplaats het hoort. Dus je stuurt niet... Op zich is het naar Zinnelo nog steeds. Ja, maar je stuurt dus niet voor de oefeningen, gaat niet letterlijk, het factuur gaat niet naar de locatie Ermelo. Het gaat nog steeds gewoon naar financiën en dienstdoeken zelf uit. Op basis van de kostenplaats denk ik, van waar het hoort. Zou er in een regel een kostenplaatsnummer gezet kunnen worden?
+00:13:44
+Dat staat er nu al, denk ik. De kostenplaats wordt uiteindelijk zichtbaar op het factuur, toch? Ja, maar die zetten ze er los in. Dus als die automatisch gaat, moet er ook een kostenplaatsnummer in komen. Dus eigenlijk alles wat we er nu uit hebben gelaten, gaat... Eigenlijk altijd naar de hoofdlocatie om gefactureerd te worden, dan zou het enige waar het op vast zou zijn gelopen, zou de kostenplaatsnummer zijn geweest. Klopt dat Danny?
+00:14:16
+Theoretisch gezien wel, want ze willen natuurlijk een aparte order hebben staan. Willen ze per oefening een aparte factuur? Of gaat het allemaal op één factuur ook? Dus als er vier ontruimingen zijn geweest in de maand, stel dat ze een maandfactuur krijgen, ik weet niet of dat zo is, of een weekfactuur en er zijn vier ontruimingen geweest, komen die op één factuur te staan of stuur je vier facturen? Ik maak losse factuurtjes. Per training een factuur. Per oefening? Per oefening een factuur. En dat willen ze ook?
+00:14:46
+Ik weet niet wat ze willen, dat is toen overgedragen en dat heb ik altijd zo gedaan. Ik weet niet wat ze willen. Nee, want als je ze bijvoorbeeld op één factuur zou zetten... En ze kunnen zien van oké, datum X is op die kostenplaats, die kostenplaats en die kostenplaats een ontruiming geweest. Zou je het in één factuur kunnen zetten? Ja, dan moeten we daarover bellen. Ik wil net zeggen, zoals ik het hoor, denk ik dat we gewoon aan de klant moeten vragen wat ze willen. Want misschien zijn wij er iets aan het doen wat gewoon voor de klant, ja, omdat het altijd zo geweest is, doen we het zo.
+00:15:18
+Maar die klant heeft er misschien geen moeite mee om verzameld facturen te krijgen met oefeningen en trainingen, et cetera. Oké. En hebben we een contactpersoon die over de facturatie gaat? Weet jij dat? Ja, weet ik. Oké. Die kan ik met je delen. Die is van het servicecentrum. Ryan heet die geloof ik. Maar voor nu is dan, dus jij maakt dan nu die klant aan. Je voegt die order toe. En dan sla je dat gewoon op. En dan doe ik opslaan inderdaad.
+00:15:49
+En dan gaat hij naar de volgende pagina. En daar doe ik dan ook de datum. Zeg maar van de training zodat ze weten wanneer het is geweest en dan kan het verstuurd worden. Oké en hoe doe je dat versturen? Kan je, je hoeft het niet, staat er misschien nu een order die al... Hier aan deze kant staat het nog niet. Nee maar staat er misschien in de lijst een lijst met orders die je nog moet versturen? Die zijn allemaal al verstuurd. Maar is het gewoon letterlijk een knopje met verstuur?
+00:16:20
+Met ja, met verwerken. Want voor de facturen die al automatisch gaan nu voor Cerelo, dus van maart. Wat ik begreep van Danny is dus dat het systeem zet klaar. Ja. En jij moet dan nog op versturen klikken. Oh, oké. Tenminste, dat is een vraag hè. Ja. Nee, dat, ik denk automatisch is automatisch, maar ik moet... Toch Danny, dat is toch de...
+00:16:51
+Nee, dat is het. En kunnen wij ergens zien of die openstaan in NXT dan Danny?
+00:17:22
+sales orders van Maart. Dus ik was net als we speak die expo aan het maken. Kunnen we dat niet nu, want ik snap het, is er dan nu niet gewoon een lijst met orders die je ziet in nxt van Maart, van Cirelo. Nee, Danny is dus die, lijst aan het maken. Nee, de vraag is of, ik ga deze even weg. Sorry Danny, het probleem. Ja, maar niet op klanten.
+00:18:21
+Alle trainingen, orders, zijn aangemaakt op locatieniveau. Ja, dat was al nooit de bedoeling. Ik denk dat we dat moeten proberen. Als er een video bij komt, en ze staan op de verkeerde deur, dan is er natuurlijk nooit een moment op dat wij dat anders gaan doen. En met die lijst die jij dan kan sturen, is het dan dat we dat elk order handmatig moeten gaan invoeren in NXT? Hoe werkt dat?
+00:18:52
+En zoals je hier net heeft laten zien, dus de klant openen en de order ID invullen. Heb je een nummer, een voorbeeld die we zouden kunnen zoeken nu? 363-9-8. Kun je eerst invoeren, Yvonne? En waar moet ik dat invoeren? Bij customers? Nee, bij orders. Als je links in het menu kan op orders klikken, dan kun je order ID filteren. Orders. En dan...
+00:19:22
+Oh, order ID. En wat zei jij? 363-980. Ja, we zitten onder één resultaat. En dan zie ik Cerenlo Julianendorp, Perenhout, op 2 maart. En dan staat er een status invoice. Invoicing, ja, maar die moet dus nog ge...
+00:19:55
+Is dat zo? Is dat een aanname? Weet jij dat zelf, Shadira? Als jij zelf iets verstuurt en je gaat kijken als je het verstuurd hebt en je kijkt bij status, weet je dan wat hier staat? Als het verstuurd is, volgens mij, staat daar invoiced. En nu is het nog niet verstuurd, zeg maar, als invoicing staat.
+00:20:30
+Dus dan is de factuur waarschijnlijk gegenereerd, maar dan niet verzonden naar de klant. Ja. En de vraag van Danny is dus nu, want hij staat dus nu inderdaad op Serenlo, regio Julianadorp. Maar dat is dus niet waar hij naartoe moet. Hij moet dus naar... C&L contract wat je net liet zien, toch? Ja. Kunnen we dat nog aanpassen nu? Weet jij dat? Nee. Kan je daarop klikken, Yvonne? Als je op die order gewoon klikt, iets, weet je niet?
+00:21:01
+Gewoon ergens, ja. Ik denk dat ik op de nummer kan klikken. Dan kan je dan daar bij de klant... Eigenschappen, bekijken, waarde instellen. 26.3 gecreëerd door... Dat is die autofacturatie. En dit zijn de orderregels. Dit zijn drie cursussen. En bovenin stond die klanten. Dus ik weet niet of je dat daar... En dan zit er een perenhout.
+00:21:33
+En wat kan je daar nog op klikken? Op het beeld, ja. Op serenlo, ja. Alleen op dat pijltje, naar klant. En dan ga ik naar deze klant. Misschien is dat iets wat we even aan Henk moeten vragen, Danny. Ja, hij is nu aan vakantie. Dus dat is niets voor volgende week. En als we die oren opnieuw moeten aanmaken, de stelgen kunnen ze niet meer wijzigen, dan is het niet goed.
+00:22:04
+Maar mag ik vragen... Wacht even, wacht even. Wat zei je, sorry Danny? Dan kan ik die wel normaal opmaken. En dan kunnen deze oude, zouden dan eruit kunnen. Maar hoe is dit dan gecontroleerd? Of alles er juist in staat? Heb je gelijk gekeken naar die hele lijst? Ja, volgens mij heb ik inderdaad met de planning gekeken of alles wat in de planning stond inderdaad ook gefactureerd is.
+00:22:40
+Ja, of er een order aan. Per order heb jij lopen opzoeken. Dus zeg maar, zoals bij dit, van perenhout, van oké, hier staan er drie in. Ik durf dat niet te zeggen, hoe ik dat gedaan heb. Maar goed, het is nu, de conclusie is, die klant die klopt niet. Dus alle orders van maart van de autofactoratie, Danny, die moeten we dus dan omgaan zetten naar, hoe heet dat?
+00:23:14
+Naar de contractplant, de 588-250. Dus dat is een stap voor maart. Ja, maar Danny, welke consequenties heeft dat nu voor april? Hij zit ook gewoon hier. Dus dan zullen we even moeten kijken dat we die omzetten.
+00:23:47
+Het enige voordeel daar is, die staan waarschijnlijk nog op open, omdat we tot begin eind maart hebben gezegd van we gaan dat leveren en factureren niet meer doen. Dus in principe zouden we die moeten kunnen aanpassen zonder te moeten annuleren en nieuwe aan te dragen. Voor die oefeningen dan, nu dat op dat hoofdcontact zit. Kunnen we dan die ook niet gewoon los autofactoreren? Ja dat kan wel, het enige wat dan misschien nog even matig moet is die los te plaatsen.
+00:24:22
+Dan moeten we even kijken hoe we dat ergens weg kunnen schrijven en waar dat dan nu staat. Dus waar dat dat gevuld kan gaan worden. Ja als we dat dan één keer ergens kunnen vullen, dat is dan één maand handmatig ergens invullen. En als het dan daarna altijd, ja dan hebben we dat ook gefixt. Ja, dus per locatie de kosten plaats invoeren ergens in NXT waar dat dan... Ja, dat kan Danny... zichtbaar wordt op de factuur. Ja, dat is even de vraag. Dan moet Danny dan even kijken of dat inderdaad in NXT, in Veld, ik weet niet...
+00:24:54
+Maar dan zouden we dat natuurlijk zo voor Cerelo kunnen doen. En uiteindelijk kunnen we dat dan ook gewoon voor heel Berky dan gaan... Kijken naar die autofacturatie als we even die klantjes die er zijn om naar die afspraken te kijken. Ja, en jij moet bellen met Cerelo of alle oefeningen op zeg maar een maandfactuur mogen. Ja, even vragen. Met kostenplaats zeg maar achter iedere datum.
+00:25:27
+Ja, even vaak vragen. Oké, is dat voor Berkie dan? Ik denk dat ik morgen misschien nog even moet schakelen dan met Danny van hoe we maart gaan oplossen of ik daar eventueel nog iets in moet betekenen ja en ik moet sowieso even kijken qua tijd omdat ik natuurlijk wozere donderdag nog werkt en dan daarna verlof heb.
+00:26:03
+Maar dan kijk ik of ik morgen die Ryan kan spreken. Dan kunnen we dat zo voor Cerelo in ieder geval nu dan goed inrichten. En als het inderdaad met die kosten plaatsen, want dat begrijp ik, kost nu gewoon heel veel werk. En als alles in de planning staat, hoeven eigenlijk die orders ook niet meer handmatig opgezocht te worden. Dan worden die gewoon aangemaakt. Ja, en zitten we, als ik het goed begrijp, dan eindelijk echt op de echte autofacturatie. Voor Cerelo. En als we die kleinere klanten dan doen, uiteindelijk, dan is het gewoon...
+00:26:35
+Ja, die zijn zo ingevoerd, want dat waren maar een paar, dat zijn er niet zo heel veel. Maar omdat we natuurlijk nu volop fire control gingen om die in te voeren, vanwege de autofactoratie. Maar alle orders dus nu van Berky, of van Cerelo, die zijn, van de oefeningen zijn verstuurd in ieder geval. De trainingen dan niet, want die staan dus nu nog open. Deze van maart staan ook open. Nee, van maart moeten ook nog die oefeningen worden.
+00:27:07
+Maar die zijn nog niet ingevoerd dan? Die zijn nog niet ingevoerd, nee. Even kijken maar, maar dan is wel februari. Volgens mij ook niet, dat moet ik even kijken. Volgens mij had ik wel de trainingen, maar de oefeningen nog niet van februari. Dat kan je zien aan de hand van die Excel. Van die planning? Van die planning, ja. Daar hou ik het in bij. Ja, klopt. En die staat op de G-schijf zeker? Nee, dat is...
+00:27:39
+SharePoint? Ja. Oké, en dat is een algemene planningsding van Cerelo of Berkey? Van Cerelo. Of van Berkey. Van Berkey. Andere klanten staan daar ook in. Ja, van... Oké. Want die jij nu gestuurd hebt, Danny, dat is dan die lijst die aangepast moet worden. Ja, die staan ook in de chat. Dus die kunnen we morgen er even bij pakken.
+00:28:10
+Oké, dus dit is dan voor Berky, voor de oefeningen en de trainingen. Die staan er trainingen in NXT al als order die nog verstuurd moeten worden. Dat zijn de trainingen? Ja, die je al gemaakt hebt. Nee, dat is de vraag. Niet voor Berky. Dus voor Berky staan eigenlijk geen orders open nu? Nee. Dan pariërkantrol.
+00:28:41
+Tenminste, volgens mij is alles rondom Berky nu duidelijk, toch Den? Ja, van jou Yvonne? Ja, en ik denk dat we dan even moeten kijken hoe we het aan gaan pakken, ook februari. Ik denk dat Shadira dat even voor de zekerheid na moet kijken of de ontruimingen van februari nog gefactureerd moeten worden. Laat dat even weten, want dan kunnen we die gelijk meenemen als die nog gefactureerd moet worden. Als het in één overzicht mag, dus dat we daar wel nog even contact over hebben, zet het desnoods op Teams in het Berkie-kanaal.
+00:29:18
+Zodat zowel Danny als ik het kunnen lezen, want misschien pakt Danny het dan wel op. Dus dat moeten we even kijken, vooral omdat ik natuurlijk alleen morgen en donderdag dan werk. Zodat we niet langs elkaar heen gaan zitten te werken. Nee, nee, nee, maar dan als je terug bent, dan heb je dat ene weetje. Dat maakt dan ook niet meer uit, nee dat is waar. Voor Fire Control, waar begin je? Dan begin ik open inschrijvingen. Ja, en wat is... Open inschrijvingen?
+00:29:49
+Ja, maar waar, wat, in Excel, het portaal? Jij wil de open inschrijvingen gaan factoreren. Wat ga je doen? Dat doe ik gewoon vanaf de presentielijsten. Dus gewoon de planning nagaan, welke open inschrijvingen er zijn geweest in maart. Daar druk ik alle presentielijsten af en ga ik ze maken. Daar heb ik Consistent Manager voor nodig. Ja, dus je gaat dan uiteindelijk, dus je kijkt in de planning op maandag 4 januari is een cursus geweest, of drie, en dan druk je die drie presentielijsten af.
+00:30:30
+Ja. En dan ga je met die presentielijsten ga je naar Cursisten Manager. Ja. Oké, en dan? Dus neem even één. Zoek ik de cursus op. Ja? Ja. Ik ga naar de cursus. Ik moet ervoor zorgen dat het klantennummer... Ook in Q-System Manager staat, want daar communiceert NXT met Q-System Manager mee. Als het een nieuwe klant is, moet ik dat nog invoeren in NXT. En dat nummer voer ik dan in op de juiste plek.
+00:31:02
+In Q-System Manager is er een vakje voor altijd. En dan weten ze elkaar te vinden. Als ik dat gedaan heb, dus dat nummer staat erin, kan ik... is er een tabje factureren. Daar klik ik op. Dan komt alles zeg maar in het rijtje te staan. Dus iedereen die aan de cursus heeft deelgenomen staat onder het tabje facturen. Zie je al die klanten. Klanten of cursisten? Nee, klanten.
+00:31:34
+Ik klik daar op. Het gaat open. Er is een vakje definitief. Als ik dat aanvink en ik doe opslaan gaat het naar NXT. Oké, maar dan even, want je zegt ik neem die presentielijsten, dus je weet van die cursus vijf namen. Ja, precies. En je zegt dus ik ga naar de system manager, ik zoek die cursus en ik zoek de klant. Wat doe je dan met die presentielijst? Waarom heb je die presentielijst nodig? Want op het moment dat ik op definitief druk en opslaan, krijg ik een ordernummer.
+00:32:09
+Zoals we dat net hebben gedaan. Dat ordernummer knip ik, plak ik in NXT. Dan maak ik hem open. Sorry, ik kijk zo moeilijk uit omdat ik nadenk. Ja, en dan zie ik die namen staan zoals ik dat op de presentielijst heb staan. In NXT. In NXT zie ik dat staan, want die worden ook op de factuur vermeld, die namen. Oké, ja. Dus jij hoeft van die presentielijst niks in te voeren. Je gebruikt het puur als een controlemiddel.
+00:32:40
+Vink die namen af. Ja. Ik ga door en daar moet ik ook de datum invoeren van de cursus, want dat staat er dan niet bij. In NXT. In NXT, daar voer ik de datum in en dan is die klaar. Want meestal staat de prijs al bij de klanten waar de prijs nog niet bekend is, dan voer ik het in, want dat is eenmalig. De eerstvolgende keer pakt die automatisch dat artikelnummer met de prijs. Maar dat is ook al in Cursisten Manager en NXT, dus dat artikelnummer. Dus voor een BHV-herhaling met e-learning staat al in Cursisten Manager.
+00:33:15
+Dus weet je, alles wordt in één keer, door dat vinkje, wordt alles overgenomen, behalve de datum. Dus de namen, de cursus, alles wordt overgenomen behalve de datum. Dus ik hoef alleen maar nog de datum toe te voegen. Ik vink die namen af om te kijken of inderdaad iedereen is meegenomen in de facturatie. Dus doe ik de namen, opslaan en verwerken. En dan volgende. En dan maakt hij dus een order aan met al die gegevens en dan heb je eigenlijk dezelfde stap in de NXT dat je gewoon op versturen drukt en dan is die weg.
+00:33:48
+En dan is die weg, volgende. Oké, maar wat ik de laatste keer heb begrepen is dat jullie geen presentielijsten meer maken in Cursista Manager, als ik dat goed heb begrepen. Maar we gebruiken dan de presentielijsten vanuit het nieuwe systeem. En dat heb je wel nodig. Maar neemt die dat dan ook over? Want als jij het van het nieuwe systeem neemt, nu zeg je... Ja, nu moet ik het dubbel doen. Want anders dan pakt hij dat niet. Dus de cursist moet wel in de cursistenmanager staan. Want anders kan ik dat niet doen. Tot 1 mei. En vanaf dat moment gaat de autofacturatie, neem ik aan voor de open inschrijving ook.
+00:34:22
+En dan wordt het minder. Vanaf dat moment wordt het minder. En dan wordt het overgenomen. Dus tot en met maart, of nee, tot en met april, werk ik gewoon vanuit cursistenmanager. Want dan is Danny voor die open inschrijvingen... dan de autofacturatie gewoon lopen via ons portaal dan neem ik aan. Dus de inschrijvingen die daar gedaan worden, worden dan als order gezet in NXT en dan krijg je diezelfde stappen toch? Ja dus het is nu het proces wat je... Oh sorry ik heb hier weer aangeklikt. Dus het.
+00:35:01
+proces wat Shadera beschrijft is nu om de laatste... inschrijvingen tot, wat is het, eind april, zeg ik het goed? Eind april. En dan, vanaf daar is het klaar. Want Danny, 1 mei loopt dan de autofactoratie? Voor open inschrijvingen. Is die 1 april, dan is die op de inschrijvingen ondergezet. Dus dan moet je tot eind maart, eind maart. Oké, beter. 1 april moet alleen maar gecontroleerd worden en versturen te klikken,
+00:35:33
+omdat we natuurlijk moeten controleren of dat goed staat. Oké, maar dan heb ik wel een vraag, want Jadira dacht natuurlijk dat hij per 1 mei ging lopen. Bij ons loopt de autofactoratie dus eigenlijk vanaf 1 april. Wordt het niet verstuurd? Heb jij ondertussen facturen zelf aangemaakt volgens de cursistenmanager? Niet voor april, want ze zit nog in februari. Oh, nog niet voor april. Maar... Maar het controleren, dat staat nu denk ik even stil, omdat jij nog met terugwerkende kracht bent aan het factureren.
+00:36:11
+Ja, klopt. En waar haal ik die lijst om te controleren vandaan? Met die ordernummers, want waar controleer ik? Ik weet niet waar ik moet controleren. In NXT bedoel je? Ja. Waar haal ik die lijst vandaan van de facturen die automatisch gemaakt zijn? Danny? Ja, daar kan ik je een lijst voor aanleveren, maar theoretisch gezien moet jij even kijken bij de klant waar die zou moeten staan. En daar staat ie, anders gaat het sowieso niet goed, maar kan jouw bestie blijven staan? Oh, oké, zo, oké, ja, ja. Mag ik weten, want Shadira heeft een oh zo momentje, nou die heb ik dus absoluut niet.
+00:36:45
+Maar ik vind het jammer dat, zeg maar, we hebben nu autofacturatie, dus die facturen zouden alvast op tijd verstuurd kunnen worden. En Shadira, en dat bedoel ik niet rot. Maar blijft achter de feiten aanlopen, want ze is bezig met het verwerken van je achterstand van maart. Dus april blijft nu liggen, of misschien zelfs februari, ik heb geen idee waar je ergens staat hoor. Dus die blijven liggen, dus de autofactoratie blijft ook liggen.
+00:37:18
+Totdat Shadera bij is, tot 1 april. En dan kan ze met 1 april beginnen en dan zitten wij misschien al in mei met de autofactoratie. Dus... Ik wil ook dat oh ja momentje hebben, want misschien kan ik controleren en kan ik dan wel vanaf 1 april zorgen dat in ieder geval de autofacturatie ook daadwerkelijk gefactureerd, gaat worden niet dat we die dan straks in juni moeten gaan doen zo blijven we achterlopen. Het gaat ons niet aan hebben wat ik bedoel.
+00:37:49
+Ja, nee maar wat we nu moeten doen is zeg maar gewoon weer zoals ik dat doe de presentielijst, erbij pakken. Dan zie ik een klant, ik zeg paarmeijer. Oké. Dan zoek ik Paarmeijer op en als het goed is, als ik het goed heb begrepen van Danny net, bij Paarmeijer staat gewoon die order en dan hoef ik alleen maar verwerken te doen. Als het klopt. Als hij daarmee het factuur gegeven heeft. Ik ga even laten zien wat jij dan doet. Dus zoek eens Paarmeijer op. Ik ga ervan uit dat Paarmeijer in april een keer een cursus heeft gevolgd.
+00:38:20
+Maar Danny, op een gegeven moment stappen we af van dat goedkeuren, toch? Neem ik aan. Ja, uiteindelijk wel, maar er zijn niet zoveel smaakjes en uitzonderingen dat dat gewoon ook niet kan. Nee, helder, maar... Deze staat, kijk bijvoorbeeld deze staat dus open, maar deze is eentje van april inderdaad. Dus dan zou ik zeg maar deze open moeten maken en dit is gewoon een training op locatie, dus dit is geen open inschrijving hoor.
+00:38:52
+Ja, Baarmeijer is denk ik het verkeerde voorbeeld, Shudira, want de plaatjes, of voor Baarmeijer, de open inschrijvingen, de cursisten stonden. Want als dat gewoon die dichte plekken waren en jullie hebben die handmatige presentielijsten gebruikt, als mensen daar hun naam op locatie op hebben ingeschreven, weten wij niet dat er acht plekjes voor Baarmeijer waren. Dus kunnen wij ook niet acht plekjes voor Baarmeijer factureren. Nee. Dus daar zul je al, daar zul je al hebben, die moet al handmatig. Voor de open inschrijving bedoel je dan?
+00:39:23
+Ja. Ja, want Waanmeijer die levert willekeurig pas een lijst aan. En als die niet in ons portaal staan, kunnen wij die ook niet factureren op de cursusdatum. Welke klant? Florans? Nee, ook niet. Want dat is ook een groep. Tweede Kamer, weet ik veel. Wie doet veel open inschrijvingen? Ibsen en Brugge. Of niet? Het zijn allemaal maatwerkplanten. Ja, of die hier groepen boeken.
+00:39:54
+Ja, klopt. Hier heb ik ook een open inschrijving. Even kijken of ik hier nog iets kan doen. Kijk, deze is eentje van februari bijvoorbeeld.
+00:40:37
+Ja, maar die zou dan niet met de autofactor... Nee, maar om even te laten zien. Kijk, zie je, hier moet de contractnummer, dan doe ik de datum. en dit komt er dan zeg maar automatisch te staan wat ik enige wat ik doe is dan de datum toevoegen die regel is de enige regel en ja met bij de referentie dan in, dit geval Danny staat natuurlijk gewoon de datum erop als die als die via de.
+00:41:09
+autofacturatie loopt hoeft dat allemaal niet meer gedaan te worden dan moet er, alleen gekeken worden van oké is er een cursus gegeven en een cursisten naam, Staat dat altijd bij jullie op de factuur, de cursistennaam? Ja, als ik het vanuit cursistenmanager overneem, wel. Maar ik weet niet wat hij nu doet. Gaat dat bij ons ook gebeuren, Danny? Nee, er is wel nog een mail gehoest die er moet worden door Appie. Zodat de klanten weten dat dat niet meer gaat gebeuren.
+00:41:39
+Oké, want dan moeten ze gewoon voor de namen in de portal kijken bij factuurcontrole. Dus we hoeven sowieso al niet meer te controleren of er een naam in staat. Het enige wat we moeten kijken is van hey staat die factuur klaar en is er inderdaad iemand op cursus geweest. En dan kunnen we op versturen klikken. Ja dus ik denk ook dat het een beetje dezelfde werkwijze is.
+00:42:10
+Dus alleen hoef ik niks in te voeren. Ik kijk alleen zeg maar ik zoek de klant op. Staat het erin? Oh ja, het staat erin. Dus deze is gefactureerd, die is gefactureerd. Dan weet je ook dat je niemand overslaat. Dus dat, ja, en dat is dan een soort van controle. Ik denk dat dat... Ja maar goed, mijn doelstelling is, omdat we de autofactoratie, natuurlijk willen laten lopen en dat je straks niet meer hoeft te controleren, dat de autofactoratie, die nu loopt van april, vanaf 1 april al,
+00:42:41
+Dat die nu eigenlijk gecontroleerd gaat worden. Dus zodat we daar wel op stoom blijven. Van nou oké, dat wordt een daadwerkelijk schoon. Op een gegeven moment, als we na een maand zien dat het allemaal loopt, dan gaat die controle stap eruit. Nee, maar we moeten er niet mee wachten tot jij bij bent met alles wat je nog handmatig moet doen. Dus of we kiezen ervoor van nou wat handmatig moet gedaan worden, dan accepteren we even dat dat misschien nog iets later wordt. Maar dat kan niet. Ik wou zeggen dat wel de controle wel al gedaan wordt.
+00:43:15
+Ik weet niet, want voor die maand april kan je ook gewoon een lijst aanleveren met nummers Danny. Aangezien dat dan in NXT niet zo makkelijk te vinden is. Want dan is het even in deze tijd dat we nog aan het controleren zijn, zijn ze makkelijker naar boven te halen. Nu zie je altijd dat het... En dat er geen klant omhoog komt waar we dat nu hebben.
+00:43:47
+Kun je zoeken, Jan Fiolen? Laten we gewoon even een voorbeeld zien. Jan Fiolen, god. Brandweerman. Ja, dus ik zie daar wel even een platte weg.
+00:44:19
+Kijk, daar staat er één open. Maar omdat dit al die autofactoratie is, zie je al niet die cursusnaam, toch? ja klopt ja ja dit is een basis vloegleider er staan geen acht personen nee dat is een van de want hij heeft meerdere hoor ja er stond er net eentje boven de 10 ja klopt de bovenste dit staat nog open.
+00:44:51
+als je pagina 2 even pakt dan staat 10 april dan staan er 6 op die tweede die tweede ja. En het probleem is, daar kunnen we niks aan doen, hier staat in principe onder water een inschrijfcode bij, maar die code zie je pas zodra je hem doorklikt naar een factuur. En met die code kun je dan weer in de factuurcontroles of taal via 1 op 1 checken of het klopt.
+00:45:28
+Dus nu zou je het vooral op basis van aantallen moeten doen en niet zozeer op nummer. Oké, en dan is beneden, is dus gewoon letterlijk... Een verstuur, factuur of zo. Kun je nagaan? Ja, dat wilde ik nu net vragen. Want deze zeg maar, stel dat we die goed zouden keuren. Wat moet Shadira dan nu doen om... Dan klik je op facturen. De enige vraag die bij deze nu nog is. Er zijn twee inschrijvingen die zijn geannuleerd.
+00:46:00
+Die staan wel op de factuur. De vraag is, klopt dat dat die inderdaad te laat... Of is dat met overzetten ergens mee is gegaan. Daar heeft de lano natuurlijk ook een rol in gehad. Dus dan zou ik eigenlijk heel even snel moeten opzoeken voor die twee annuleringen of die terecht gefactureerd zijn. Ja precies. En ik zie nu ID staan, maar op de factuur ziet u wel dat het om de basis-WRV met e-learning gaat. En met de ploeglijner. Ja, oké. Dat is niet aangepast, dus in principe zou daar gewoon...
+00:46:34
+Dan moeten ze zijn zoals het was. Zeg maar met dat nummer. Dan moeten we kijken voor die twee 445's. Met dat nummer gaan ze naar de maand en dan zoeken ze dat nummer op en dan kunnen ze zien wie het geweest is. Oké.
+00:47:44
+Ja, Shadira, ik kom nu de wet, dat is de manager. Of deze persoon, zou je het daar eigenlijk even moeten nakijken? Want je kunt het, ik kan het aan mijn kant nakijken. Maar het probleem is, dan zie ik wanneer het geannuleerd is. Maar de vraag is natuurlijk, wanneer is die annulering daadwerkelijk bij jullie binnengekomen? Ja, precies. Normaal gesproken bij ons dadelijk, klopt dat? Alleen nu, vermoed ik, met een aanname, die zijn aangemaakt. En toen geconstateerd, dat zijn er geannuleerd. Dus de vraag is, zijn die terecht gefactoreerd als geannuleerde inschrijving? Ja, oké. Ja, dan moeten we nog even nakijken.
+00:48:19
+En Danny, kunnen wij hier iets zelf in betekenen om te zorgen dat de autofactoratie die nu loopt voor de open inschrijvingen, dat, ja zo, wat een rare gewoonte, of gewoonte, ik moet daar kijken. Dat wij kunnen zorgen dat de autofacturatie, in ieder geval van april enzo, dat die doorgefactureerd kan worden. Als wij die presentielijsten hebben, noem maar op.
+00:48:49
+Dus dat dat gaat lopen. Als je die presentielijsten hebt, dan moet je dat in het begin kunnen controleren. Ja, en dan misschien samen in het begin even kijken van nou oké, doe ik het goed qua facturatie? Want daar ben ik natuurlijk nog niet helemaal... Dat het me nu helemaal duidelijk is, zeker niet na al dat geklet van vandaag, zit mijn hoofd sowieso een beetje vol om dit nu uiteindelijk ook nog helemaal op te slaan. Maar het is wel mijn bedoeling om de autofacturatie te laten lopen en dat die ook wel in april gefactureerd gaat worden.
+00:49:31
+En dat hier dan die achterstand ook weggewerkt kan worden. Ja, we kunnen daar iets voor inplannen. Ik weet niet of jij morgenochtend tijd hebt op donderdag. Ja, ik... En we zijn er heel goed aan om daar Albert aan bij te betrekken, zodat hij het ook even, meekrijgt wat we afgesproken hebben. Ja. Dan kan hij dat ook na aanzoek betalen, als in wat de status is van de facturatie. Ja. Als hij daar dus op het kanaalpunt zit. Ja. Dit is dan voor de open inschrijving en dan heb je nog bij vrije controle de groepstrainingen.
+00:50:03
+en ontdraaimingsoefeningen enzo. Ja. Het deel wat Yvonne al erin heeft gezet, die in die Excel-lijst dus groen zijn, die worden in principe automatisch aangemaakt als order. Alleen daarvan hebben we toen afgesproken, dat is een order als reminder dat daar iets gefactureerd moet worden. Want de ene wordt daar gewoon de groepsprijs gefactureerd, bij de ander moeten we nog kijken, het waren acht poppetjes, dus we moeten acht keer een ander bedrag. Die bedragen zijn nog niet duidelijk, dus Shadira moest ook in die facturatie nog die bedragen controleren en zorgen dat die stap voor stap bij de klant er goed in kwamen.
+00:50:41
+Want nu staan alle bedragen van klanten die voor ons staan in Excel-files en overal, maar niet in NXT-geborgen. Dat is overigens Shadira geen verwijt naar jou, maar het is gewoon even zodat Albert snapt waar we moeten zoeken. Dus daar zit ook nog wel een hele kluif aan. Dus die open inschrijvingen, dat is eigenlijk een kwestie van... Er zullen dingen nagekeken moeten worden, maar na 10 orders kun je zeggen, die kloppen, dus ik kan die gewoon met de ogen dicht factureren. Geroepen, daar zit echt nog wel meer controlewerk aan, om te controleren of het allemaal goed staat,
+00:51:11
+of de prijzen kloppen, moet het per inschrijving, moet het per groep. En daar ligt ook de bal bij Jordi en jou, om te zorgen dat we bij die klanten waar die grote uitzonderingen zitten, om daar gewoon koffie te gaan drinken en te zeggen, goh jongens, jullie doen dat niet zo, kunnen we niet deze prijs afspreken, gewoon... Ja, ja, ja. En die, wat wou ik nog vragen? Schiet me zo wel even te binnen. De gouden en zilveren klanten staan erin. Die zijn allemaal mei en juni zijn die ingevoerd.
+00:51:47
+Corrigeer me als ik het fout heb Danny. Volgens mij was het mei en juni. En nu de eerste drie klanten, volgens mij zijn dat de gouden klanten. Die staan met het hele jaar erin. Dus dat staat er allemaal al in. Dus dat dat via de autofacturatie kan lopen. En ik hoop dan met de controles die gedaan gaan worden vanwege die autofacturatie. Als er nog ergens een bedrag niet goed in komt te staan en die kan wel vastgezet worden.
+00:52:17
+Dat dat als Jadira dat tegenkomt dat die dan ook die prijs weer corrigeert. Om te zorgen dat het de volgende keer wel goed gaat. Zodat... Als dat dan eenmaal loopt, dat uiteindelijk ook dat niet meer gecontroleerd hoeft te worden. Kun je in NXT prijslijsten per klant aanmaken? Dat kan in NXT. Ja, ik vind dat prijslijsten kan volgens mij ook, maar dat heb ik nog niet gewaardeerd.
+00:52:48
+Oké, maar in ieder geval wat wij in Exact Online kunnen bij die klanten, dat kan dus ook in NXT. Dus dat de prijs dan straks automatisch opgehaald wordt als er klantafspraken over zijn. Ja, en voor een deel heb ik dat al gedaan, waar Yvonne dat mij heeft doorgegeven. Ja? Oké. Nee, maar het kan. Ik denk wel dat het goed is dat je het hieruit gewoon overal even controleert. En het vier ogen principe, ja, en bij sommigen staat er gewoon absoluut bedrag om te voorkomen dat we te weinig factureren, omdat er geen prijzen bekend waren. Dus die heb ik dan bijvoorbeeld op 5000 euro gezet.
+00:53:19
+Om erop om, we kunnen beter in kredits sturen en dan vergeten te factureren. Oké, en dan had ik natuurlijk vorige week al gevraagd, even kijken, waar je dan stond met de achterstand. En dan was het, even kijken. Ik ga even muten, praat maar door, ik hoor jullie wel. Ja, even kijken, voor Berkie gaf je aan, dat geldt dan alleen voor Cerelo dan natuurlijk.
+00:53:52
+Dat januari en februari zijn verstuurd, de trainingen. De trainingen, ja. En de grootste dingen moeten nog. Maar dat zijn dan de oefeningen. En dat was dan februari en maart. Of januari ook nog. Durf ik niet te zeggen. Dan moet ik even kijken. Oké, wil je dat... Januari, maart zeker. Wil je ook dan doorgeven eventueel of het ook januari nog is voor Cirelo van de oefeningen? Omdat we die toch moeten doen dan...
+00:54:22
+Nou, want ik wil gewoon een compleet overzicht wat er nou nog moet gebeuren daarin. Want ik heb gewoon geen totaal beeld erbij. En bij vijfde control gaf je aan dat je nu met februari bezig was. Ja, ik ben begonnen met de open inschrijvingen van maart nu. Ja, dan zit ik op 16 maart zeg maar daarmee en dan moet ik nog alle maatwerk doen en dan moet ik ook voor februari zeg maar doen, alle maatwerk, want de open inschrijving over februari.
+00:54:55
+heb ik gedaan. Even voor mij, zijn de maatwerk klanten, zijn dat niet vele hogere facturen van februari dan de open inschrijvingen van maart? Ja, klopt. Nou weet ik niet of dat veel meer werk is, maar zou je dan niet beter eerst... Maatwerk februari kunnen we doen, omdat dat veel meer geld genereert dan de open inschrijvingen van maart? Ja, dat kan. Maar meestal begin ik met de open inschrijvingen, omdat dat per klant gaat. En als ik bijvoorbeeld een Ipsen pak, die zet ik gewoon op één factuur.
+00:55:27
+Dus dat gaat sneller dan de open inschrijvingen. Dus daarom begin ik met de moeilijkste. Dan heb ik dat in ieder geval gehad. En dan ga ik die maatwerk dingen doen. En dat is achter elkaar klaar. Op de opzicht snap ik dat, maar omdat je zegt... Ik ben nu met maart bezig voor de open inschrijvingen, maar voor februari staat het maatwerk nog open. Dat zijn veel hogere bedragen het bedrijf wil natuurlijk geld genereren hoe we het wenden of keren. Ik bedoel, wij zijn allemaal de poppjes die het uit moeten voeren, maar ze willen geld.
+00:55:59
+zien. Dus ik denk wel dat je beter eerst het maatwerk van februari moet factureren. Misschien is dat ook gedaan hoor, maar ik ga er wel niet weer. Nee, zeg maar zou je dat op Teams willen zetten, zeg maar in het kanaal gewoon waar je staat? Want dan kan ik ook als ik terug ben kijken van oké, waar kan ik ondersteuning aan geven? Wat is het handigste? Ga ik bestorten op de autofactoratie om dat te controleren? Of moet ik toch gaan kijken en mijn eigen erin verdiepen dat ik mee kan helpen,
+00:56:33
+hoewel me dat een verschrikkelijke puzzel lijkt. Als ik jou zo hoor met nummers, noem maar op wat er ingevoerd moet worden. Maar ik denk dat de geldstroom op gang moet komen. En dat we moeten gaan zorgen dat die op gang blijft. En zeg maar up to date is. Dus ja, dat we daar ons met z'n allen onze schouders onder moeten zetten. Om dat voor elkaar te krijgen. En dan hebben we zeg maar ergens een punt nodig waar jij in zet van nou oké hier sta ik en ja dan kunnen wij dan daaruit gaan concluderen van nou oké hier springen wij op in daar gaan wij dan mee aan de slag en jij kan dan de achterstand afhandelen of wij springen in op de achterstand en jij moet de autofactoratie controleren. Ik roep maar even iets maar dat is wel iets waar we dan duidelijkheid in moeten krijgen.
+00:57:30
+En als jij dat eventueel, als dat zou lukken, morgen in de loop van de dag, in ieder geval een overzichtje kan sturen, zeg maar, waar jij dan staat, zodat ik donderdag dan nog tijd heb om daar overleg over te plegen, zodat ik weet wat ik dan eventueel, als ik terug ben, dan op moet gaan pakken en mijn eigen daarop moet storten. Ja, kunnen we dat afspreken? Dus morgen eind van de dag kan je een overzicht aanleveren van Berkey Fire Control, wat er nog van de handmatige dingen zijn.
+00:58:05
+Ja, ja, ja, klopt. En dan kijken wij ook samen met Danny ergens donderdag voor de status rondom die autofacturatie en hoe we daar dingen in kunnen... Dus ook graag onderscheiden, hoe heet dat, open inschrijvingen en maatwerk. Ja, ja. Yes, Dan! Doei! We horen je niet. Oh. Ja, sorry. Ik was net aan het luisteren. Nee. Maar dat is goed. Maar dan... We gaan zorgen voor een onzicht met alle inschrijvingen.
+00:58:37
+Ja. En dan spreken wij elkaar donderdag even over die autofacturatie. En dan krijgen wij van Shadira morgen die lijst met waar je staat met de facturatie. Oké. Top. Dankjewel, Den. Fijne dag, jongens. Nee, fijne avond. Spreek je morgen. Want nu in NXT staan geen orders open die nog, waar alleen nog maar op facturen. Niet voor mij, want als ik iets invoer dan verwerk ik dat gewoon direct.
+00:59:11
+Dus dan als de orders instaan dan zou dat van de autofacturaties zijn. Dus dat moet dan gegenereerd zijn bij Berkey vanaf maart en bij Viscontrol vanaf april. Ja. Ja? Ja. Dan begint het beeld een beetje. Dankjewel voor je tijd, want dan kunnen we ook een beetje verder mee denken.
