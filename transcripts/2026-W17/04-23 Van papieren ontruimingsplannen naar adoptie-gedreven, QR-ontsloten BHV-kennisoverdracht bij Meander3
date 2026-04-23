@@ -1,0 +1,108 @@
+2026-04-23T08:58:08Z
+
+##04-23 Van papieren ontruimingsplannen naar adoptie-gedreven, QR-ontsloten BHV-kennisoverdracht bij Meander
+
+## Summary: ![PLAUD NOTE](permanent/ab14542be81548d0838cf2d647bfcf8c/summary_poster/card_20260423071421-v2@c25fc7f35a2a318a5c8e1f_20260423071516_38f7cbd2.png)
+
+## Kernsynopsis
+Het vraagstuk draait niet om “meer tekst” in ontruimingsplannen maar om bruikbaarheid en adoptie: Meander beschikt al over uniforme, locatie-specifieke ontruimingsplannen (PDF in Zennia; hardcopy op locatie; ca. 14 locaties) die procesmatig worden beheerd, maar de operationele frictie blijft dat BHV’ers, nieuwe medewerkers en ZZP’ers de plannen niet actief raadplegen wanneer het ertoe doet. Cura (Jordi klantgericht, Albert op automatisering/AI) stelt een tweeslag voor: eerst een inhoudelijke scan op volledigheid en navolgbaarheid van 4–5 representatieve plannen (geen plattegronden; actualiteit van namen/afsluiters ligt bij Meander), daarna een adoptie-offensief met web-based ontsluiting (QR), korte e-learning, podcasts en digitale taarkaarten om de kerninformatie situatief en snel toegankelijk te maken. De inzet is niet snelheid maar richting: een concreet advies en routekaart die de BHV-kennisoverdracht structureel verbetert, met de kanttekening dat eventuele locatie-audits nodig zijn zodra inhoud daadwerkelijk geactualiseerd moet worden. Wij committeren ons aan het leveren van die analyse en het adoptie-advies; Meander committeert zich aan het aanleveren van representatieve plannen en borgt zelf de feitelijke actualiteit van data (namen, afsluiters). De uitkomst die telt: een plan dat niet alleen voldoet aan norm 81-12:2017, maar vooral werkt onder druk.
+
+## Probleem → Respons: Van papieren conformiteit naar operationele bruikbaarheid
+- Huidige configuratie en governance
+  - Ontruimingsplannen per locatie, grotendeels uniform met locatie-specifieke secties.
+  - Opslag en toegang via Zennia (PDF); hardcopy op locatie.
+  - Wijzigingsproces: preventiemedewerker meldt; Ed voert aanpassingen door in Zennia; gecontroleerde vrijgave. Locaties kunnen zelf niets wijzigen.
+  - Scope: ca. 14 locaties; geen vraag naar plattegronden.
+- De vraag van Meander
+  - Inhoudelijke toets: dekken plannen de lading voor BHV-actie? Wat ontbreekt qua informatie, structuur of lay-out?
+  - Adoptie: hoe krijgen BHV’ers, niet-BHV’ers, nieuwe medewerkers en ZZP’ers de relevante info snel en aantrekkelijk mee?
+  - Tijdspad: geen haast; behoefte aan een “stip op de horizon” en interne onderbouwing (routekaart).
+- Waargenomen frictie (operational reality)
+  - Plannen zijn waarschijnlijk ~95% compleet qua basisinhoud; toegevoegde tekst heeft beperkte meerwaarde zonder betere ontsluiting.
+  - Gebruikersgedrag: men leest de klapper niet proactief; onder druk wint “situatieve toegang” van statische PDF’s.
+  - Externe inzet (ZZP’ers/bezoekers): vinden de plannen niet, hebben geen context, maar moeten wel handelen.
+- Voorgestelde respons en opties (adoptie-gedreven design)
+  - Fase 1: Inhoudsscan van 4–5 representatieve plannen op volledigheid, duidelijkheid, taakrelevantie, en navigeerbaarheid (incl. BHV-actiekaart-logica).
+  - Fase 2: Multikanaals ontsluiting
+    - Web-based planvarianten met QR-toegang op locatie (direct naar kernsecties).
+    - Korte e-learningmodules op basis van planinhoud (rolspecifiek; microlearning).
+    - Podcasts voor herhaling en laagdrempelige kennisopname.
+    - Digitale taarkaarten (rol/incident-gestuurd) voor mobiele raadpleging.
+- Randvoorwaarden en scope-afbakening
+  - Actualiteit van afsluiters/namen/proceduredetails: beheert Meander; inhoudsscan beoordeelt structuur en volledigheid, niet feitelijke actualiteit.
+  - Eventuele on-site verificatie nodig wanneer inhoudelijke updates doorgevoerd moeten worden.
+  - Representatieve steekproef volstaat; 14 volledige dossiers niet nodig.
+- Succescriteria en risico’s
+  - Succes = BHV’ers en medewerkers vinden in <30 seconden de juiste actie-informatie; herhaalbare adoptie via QR/e-learning/taakkaarten.
+  - Risico’s: zonder governance op updates blijft digitale laag snel verouderen; zonder duidelijke roltoewijzing verwatert adoptie.
+  - Mitigatie: centrale contentbeheerrol blijft bij Meander (Ed); Cura levert structuur- en adoptiekaders die dit proces versnellen.
+
+## Volgende stap (Actie-items)
+**@Ed**
+- [ ] Selecteer en verstuur 4–5 representatieve ontruimingsplannen (verschillende locatietypen) aan Albert, met Jordi in cc - [TBD]
+
+**@Albert**
+- [ ] Uitvoeren van een inhoudsscan op de aangeleverde plannen (compleetheid, taakrelevantie, navigatie, lay-out) en opstellen adviesrapport inclusief adoptieroutekaart (QR, e-learning, podcasts, taakkaarten) - [TBD]
+
+**@Jordi**
+- [ ] Co-creëren van het advies met Albert en expliciteren van implementatie-opties, fasering en randvoorwaarden voor Meander (incl. benodigde on-site verificatie indien updates) - [TBD]
+
+## Transcript
+00:00:07
+Goedemorgen, Ed. Goedemorgen. Goedemorgen, Albert. Dat is alweer een tijd geleden. Ja, Ed. Zeker. Hoe is het? Goed. Ik mag niet klagen. Met jou? Ja, prima. Bij jullie is het een en ander ver... Dag Jordi, ik zeg bij jullie is het een en ander veranderd, heb ik begrepen.
+00:00:45
+Ja, dat klopt, dat klopt. Dus dat merk je ook natuurlijk dat je mij al een tijdje niet gezien hebt, maar dat Jordi natuurlijk en Jordi wel. Maar dat was ook al iets met de rolverdeling, dat Jordi op een gegeven moment meer ook vanuit zijn leerpadcoördinatorrol, dus was veel bij klanten betrokken, bij oefeningen en dergelijke, deed dat eigenlijk beter dan ik. Dus is toen meer opgeschoven naar alle klantgesprekken die ik deed, ging ik me wat meer bezighouden met...
+00:01:19
+De algemene zaken binnen Cura, waardoor Nick juist weer ook ruimte kreeg om meer op het stukje automatisering te zitten. Ze zijn flink bezig met automatiseren van processen, koppelingen realiseren, inzet van AI binnen onze organisatie. Dus dat hebben we nu zo verdeeld eigenlijk en dat bevalt heel goed. En ik moet ook zeggen dat ik... Als Jordi dan bij klanten is geweest en ik schuif dan weer een keertje aan, krijg ik altijd te horen dat hij het beter doet dan ik.
+00:01:52
+Dus dan hebben we een goede keuze gemaakt om een andere rolverdeling te doen. Prima toch, ja. Maar nu, omdat het nu toch wat, ook inhoudelijk wat meer over ontruimingsplannen en dat soort zaken gaat in mijn begin van mijn carrière. Maar schreef ik ontruimingsplannen, deed ik ook advieswerken. Dus ik dacht, even leuk om aan te schuiven, misschien dat ik nog... Ja, prima, helemaal goed. Dat ik nog... Helemaal goed. Ja. Want dat was ook de reden voor dit overleg.
+00:02:26
+Jordi, zal ik meteen van start gaan? Ja, ik denk dat het, vanuit mijn kant zeg maar, ik heb natuurlijk een mail gekregen met de vraag, voor goal we willen naar die ontruimingsplannen kijken, kunnen we in contact komen met een veiligheidsdeskundige? En wij doen eigenlijk altijd om te beoordelen wie we binnen onze organisatie daar opzetten, is het altijd heel belangrijk om te weten, wat is nou precies de vraag? Want als jij hulp nodig hebt bij het schrijven van, ik zeg maar even iets plattegronden, dan is het iets heel anders dan bij het schrijven van plannen.
+00:02:59
+Want het zijn weer twee andere personen, dus vandaar de vraag. Ja, oké, goed. Ik neem jullie heel even mee. We hebben natuurlijk... Op iedere locatie van ons hebben we een ontruimingsplan. Een ontruimingsplan wat in groot gedeelte universeel is. Maar er zijn natuurlijk ook echt zaken bij die op maat van de locatie zijn afgestemd. En we willen eigenlijk samen met jullie, vandaar ook die veiligheidsdeskundigen,
+00:03:31
+we willen onze eigen ontruimingsplan dus even met jullie tegen het licht aanhouden. Om te kijken van... Zijn deze ontruimingsplannen nu compleet? Missen we nog iets aan informatie? Het gaat helemaal niet om plattegronden. Maar missen we nog iets inhoudelijk aan informatie in die ontruimingsplannen? Wat adviseren jullie wat er wellicht nog bij zou kunnen staan? Want uiteindelijk moeten die ontruimingsplannen ervoor zorgen dat de BAV voldoende informatie heeft.
+00:04:02
+Kennis heeft om op basis daarvan ook te kunnen acteren. Nou goed, die hebben wij ooit opgesteld die ontruimingsplannen. We hebben uiteraard ook naar Arbo gekeken, waarom moeten die voldoen minimaal, die ontruimingsplannen. Maar we hebben ook behoefte op dit moment om eens te kijken samen met een andere deskundige partner, dan kijken ze even mee van hoe zijn onze ontruimingsplannen op inhoud.
+00:04:36
+Misschien ook op lay-out, whatever. En kunnen we daar wellicht nog iets in veranderen om de puntjes nog verder op de i te krijgen? Ja, want ik ga meteen even een wellicht onverwachte of hele andere vraag stellen. Zijn jullie wel voornemens om de plannen aan te houden zoals jullie dat nu doen? Dus op papier, op locatie, in een mapje? Of staan jullie er voor open om dat ook online te doen, zodat je dit in alle tijden 24-7 kan aanpassen?
+00:05:12
+Nou, dat hebben we. We hebben in ons kwaliteitsmanagement systeem in Zennia al onze ontruimingsplannen. En die kunnen de locaties raadplegen wanneer dat ze willen. Op het moment dat daar iets in verandert in de ontruimingsplannen. Want er staan bijvoorbeeld ook namen van managers in of wat dan ook. In de voornemens, allemaal dat soort dingen. Juist, juist. Zijn dat in dat systeem Word of PDF of is het echt in een soort share?
+00:05:45
+Nee, dat is PDF. PDF, ja. Zij kunnen zelf evenal, maar zij kunnen niets veranderen daarin. Het kan niet zo zijn dat iedere locatie zelf zijn ontruimingsplannen kan veranderen. Op het moment dat er wijzigingen in moeten plaatsvinden, waarvan ik niet af weet, er komt een andere manager op locatie, dat weet ik ook niet altijd. Dan hebben we de afspraak gemaakt dat de preventiemedewerker mij die aanpassingen doorgeeft. Ik pas aan in Zennia, ik ben de enige die kan wijzigen in Zennia.
+00:06:18
+En vervolgens wordt die weer vrijgegeven. En dan kunnen ze de documenten in hun ontruimingsplan, zeg maar. De hardcopy die op locatie is, daar kunnen ze dan de pagina's in veranderen. Dus het gaat wel allemaal gestructureerd. Niemand kan zomaar iets veranderen in die ontruimingsplan. Nee, ik denk ook wat Jordi bedoelt. Hoeveel locaties hebben jullie, Ed, bij Meander? Even uit mijn hoofd, waar we ontruimingsplannen voor hebben.
+00:06:49
+We hebben bijvoorbeeld ook ontruimingsplannen voor een locatie waar visio... Noemen we Meander in balans. De Albertenslaan is dat. Die allemaal bij elkaar te tellen. Hebben we om en om de veertien locaties. Nee, want ik hoor je zeggen. Want dat was ook een vraag van mij. Wat is nou jullie doel? Nou, dat heb je volgens mij net benoemd. Dat de mensen, de medewerkers van Meander en de BNV'ers natuurlijk voldoende informatie en kennis hebben om op te kunnen treden.
+00:07:19
+Heb je net heel mooi. En met dat doel in ogen is dat. Het is los of het voldoet aan de norm, de 81-12-2017, heb ik zelfs ooit eens in die commissie gezeten om die te schrijven, dat moet je nagaan, maar dan ben ik meer van, kijk alles wat in die plannen staat om dat te actualiseren, klopt het nog, zit de afsluiter nog waar die moet zitten, allemaal van dat soort zaken, kloppen de procedures nog, maar daarnaast van hoe ga je die kennis bij die mensen krijgen en dat is iets waar...
+00:07:52
+Denk ik Jordi ook meer die kant, want wij hebben ook een online variant die je dus gewoon web-based kan bekijken. Die je bijvoorbeeld met een QR-code kunnen mensen die scannen en dan zitten ze meteen in een webomgeving. Maar waar wij daar nu met ontwikkelingen bezig zijn, is dat we van ontruimingsplannen bijvoorbeeld ook podcasts maken. Of op basis van je ontruimingsplannen een hele korte e-learning maken. Of zelfs een digitale taarkaart kunnen genereren die mensen op hun telefoon zouden kunnen raadplegen.
+00:08:28
+En daarmee bereik je veel meer het doel dat mensen dus die voldoende informatie en kennis hebben. Niet alleen de BHV'ers, maar ook de gewone medewerkers, nieuwe medewerkers die starten en die kunnen dat doen. En ook, ik weet niet of jullie ook met ZZP'ers werken. Zeker zzp'ers op locatie, die weten gewoon niks van een locatie en die gaan, neem ik aan, niet het ontruimingsplan raadplegen, het pdf. En dat zijn dus dingen die tegenwoordig allemaal tussen haakjes makkelijk kunnen. Dus met het doel voor ogen zijn dat mogelijkheden. En ja, we kunnen heel makkelijk, als jij de 14 plannen aanlevert, kan ik daar...
+00:09:10
+Een scan van maken kijken, joh, wat zouden we anders kunnen doen daar een advies in meegeven. Natuurlijk, als het echt geactualiseerd moet worden, dan zal er iemand op een locatie een ronde moeten doen of alles nog klopt wat er in het plan staat. Ja, want dat is denk ik precies ook wat ik wil aangeven. Ik denk oprecht als ik hoor. En sowieso hoe actief en hoe betrokken jij ermee bezig bent, maar ook als ik hoor wat jullie er al aan gedaan hebben, eventueel met anderen en kijkende naar de plannen.
+00:09:43
+Dan durf ik echt wel te zeggen dat die plannen, laten we zeggen, voor 95% gewoon compleet zijn. Dat daar misschien dingen nog aan toegevoegd kunnen worden, dat zou kunnen, maar ik vraag me af in hoeverre die toevoeging dan daadwerkelijk ook toegevoegde waarde heeft. Dus als ik dan hoor wat jij graag wil, dan heb ik daar de meerdere uitdaging in. Krijg je nou zo'n ontruimingsplan ook bij de BRV'er? Hoe weet de BRV'er dat hij dat snel, wat daarin voor hem van belang is? Ja, kijk, mij gaat het gewoon even erom, in eerste instantie,
+00:10:19
+ik wil de ontruimingsplanners even in het licht houden bij jullie. Om te kijken van, is dit iets? Kijk, qua afsluiters, qua namen, of die actueel zijn. Daar hoeven jullie niet naar te kijken. Sterker nog, daar weten jullie ook niet of ze wel of niet actueel zijn. Daar houden wij eigenlijk in de gaten. Maar met name als je kijkt naar de informatie die erin staat. Dekt die de lading? Zou er wel eens nog iets bij moeten? Dat is één.
+00:10:49
+En twee is inderdaad, hoe zorgen we ervoor dat de mensen ook dat ontruimingsplan eigen maken? In de BHV rondleidingen krijgen ze dit altijd mee, ook waar het ontruimingsplan te vinden is, zowel in de klapper als in het kwaliteitssysteem. Maar wat je merkt is, en dat vind ik continu een uitdaging, mensen gaan niet die klapper pakken en denken, oh interessant, laat ik dat eens even rustig doorlezen.
+00:11:21
+Ik zit eigenlijk ook te kijken op welke... En Albert, jij gaf het al aan, op welke ludieke wijze, uitnodigende wijze, kunnen we de mensen toch meenemen? En ik ben er helemaal voorstander van, niet alleen de BRV'ers, maar ook mensen die bijvoorbeeld net op locatie komen werken, of niet BRV'ers, het maakt niet uit. Hoe kunnen we die nu spelenderwijs meenemen in het ontruimingsplan van de locatie, zodat ze ook die informatie in ieder geval meekrijgen?
+00:11:53
+Ja. En dat vind ik wel een hele lastige. Waarom? Omdat veiligheid vindt iedereen belangrijk. Tot het moment dat ze zelf actie moeten gaan nemen in dingen, dan gebeurt dat gewoon niet. Dus ook daar vind ik in ieder geval, ja hoe gaan we dit doen? En wellicht dat jullie daar ook al tools voor hebben. Dat jullie zeggen, nou dat zou een hele goede zijn, daar hebben we goede ervaring mee. Neem ons daar dan in ieder geval alsjeblieft mee. Nee, daar kan het genoeg ideeën daarover.
+00:12:28
+Wat heb jij, is dit iets met haast? Wat is jouw... Wat is haast? Ja, ik weet het niet. Het gaat me er meer om, de dingen die we aan het ontwikkelen zijn, die zijn niet morgen af. Wat ik net zei, op basis van een e-learning maken, dat soort zaken. Maar we kunnen zeker wel, als jij de plannen aanlevert... Het is voor mij geen moeite om daar een scan van te maken en daar in ieder geval iets van te vinden.
+00:12:59
+En ik kan natuurlijk ook al aangeven, juist wat jij noemt, die ludieke ideeën die wij aan het ontwikkelen zijn om een ontruimingsplan meer onder de aandacht te brengen. En dus niet alleen bij de BNV, want die hebben het eigenlijk nodig. Natuurlijk als er iets is, die willen aan de slag met die kaarten. Maar nogmaals, ook de bezoeker, de mensen die nieuw komen werken, de algemene medewerker. Dus dat kan ik daar allemaal in dat advies meenemen. En dan kan je eigenlijk op basis van dat advies, ja, kunnen we gaan zitten van hoe gaan we dit aanpakken?
+00:13:33
+En zo ja, hoe gaan we dat dan doen? Ja, fijn al. Waar het ons om gaat is, het hoeft niet morgen af te zijn allemaal. Maar als we straks een stip op de horizon hebben. Dit is de weg die we zouden kunnen bewandelen, maar goed, die duurt wel nog even, maar dan zou dat de voordelen gaan opleveren. Dan denk ik, dan zijn we al goed op weg. Ik ga er niet van uit dat ik jou alle ontruimingsplannen moet laten toekomen, want die zijn in de regel allemaal hetzelfde.
+00:14:05
+Maar ik denk als ik je eens een 4 of 5 ontruimingsplannen van verschillende locaties laat toekomen, dan krijg jij volgens mij een prima beeld. Hoe die in elkaar zitten en wat eventueel daar nog aan gedaan zou kunnen worden. En als jij ons dan zou willen meenemen, of jullie, van dit zou dan de weg zijn om de mensen inderdaad mee te gaan nemen in die ontruimingsplannen. Maar ook nieuwe medewerkers, ook niet BRV'ers. Maar daar hebben we weliswaar nog een half jaar voor nodig om dat te kunnen realiseren.
+00:14:41
+Kan ik in ieder geval al een voorstel binnen de organisatie neerleggen. Dat dit de weg is zeg maar ernaartoe. En dat ook gaan delen met de organisatie. Helder. Nee is prima Ed. Je hoeft er zeker niet alle veertien aan te leveren. Als er toch tachtig procent op elkaar lijken. Als jij me een aantal kan sturen. Dan ga ik met die analyse aan de slag. En dan samen met Jordi maken wij dan een advies. Die jij dan intern kan delen. En dan kunnen we daar verder op.
+00:15:13
+Oké. Ja top. Ik denk dat dat het belangrijke is. Enerzijds van hoe is het ontruimingsplan. En anderzijds. Hoe kunnen we ervoor zorgen dat we dat. Nog beter zeg maar onder de aandacht. Gaan brengen binnen de organisatie. Yes. Prima. Oké. Dan laten we het doen. Top. Dan laat ik jou een paar ontruimingsplannen toekomen. Jorn, ik zet jou een cc uiteraard erbij, dan heb jij ze in ieder geval ook meteen. En dan hoor ik graag van jullie.
+00:15:45
+Geen probleem, Ed. We gaan op. Oké, prima. Yes, gaan we doen. Dankjewel, Ed. Doei, tot ziens. Dankjewel alvast. Hoi, hoi.
