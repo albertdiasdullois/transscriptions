@@ -1,0 +1,112 @@
+2026-04-23T14:57:49Z
+
+##04-23 Contractgedreven facturatiestrategie voor BHV‑trainingen en ontruimingsoefeningen: keuze tussen verzamelfactuur en kostenplaatsfactuur
+
+## Summary: ![PLAUD NOTE](permanent/ab14542be81548d0838cf2d647bfcf8c/summary_poster/card_20260423131638-v2@b9b3aed9b972d8884f3cf2_20260423131732_f601dfb8.png)
+
+## Kernsynopsis
+
+De facturatie voor BHV-trainingen en ontruimingsoefeningen tussen Berky/BERC en Serenlo zit op een cruciaal onzekerheidspunt: de contractafspraak “per factuur maximaal één kostenplaats” botst met het operationele streven naar één maandelijkse verzamelfactuur met minimale factuurlast. De Crediteurenadministratie (Ryan) bevestigt dat Serenlo factureert via één algemeen kanaal en de voorkeur heeft voor één kostenplaats per factuur, maar weigert logische aannames om te zetten in beleid zonder contractbevestiging. Historische facturen tonen inconsistentie (meerdere locaties op een algemene kostenplaats), wat het risico vergroot dat een verkeerd ingerichte autofacturatie straks vastloopt in goedkeuring of herboeking. De inzet is duidelijk: automatiseren met zo weinig mogelijk facturen en wel correcte kostenplaatsrouting; de doorslaggevende variabele is een expliciete uitspraak van Contractmanagement (Erika Wesseling of vervanger) over drie punten: 1) of trainingen een kostenplaats moeten dragen, 2) of ontruimingsoefeningen per locatie apart gefactureerd moeten worden, en 3) of één verzamelfactuur met meerdere kostenplaatsen (in aanhef/regel) contractueel is toegestaan of dat er een uitzonderingsafspraak nodig is. Wij nemen pas een implementatiebeslissing nadat Contractmanagement dit zwart-op-wit bevestigt, zodat autofacturatie niet strandt op beleidsfouten.
+
+------
+
+## Facturatiekader en systeemrealiteit
+
+- Serenlo-proces: facturen gaan naar het algemene e-mailadres, worden gescand, gecontroleerd op basisgegevens (o.a. kostenplaats, KVK/BTW), en ter goedkeuring naar de budgethouder gestuurd; uitgangspunt aan de verwerkingzijde is “één factuur → één kostenplaats”.
+- Contractsignaal: “Per factuur maximaal één kostenplaats” staat expliciet in de overeenkomst; dit impliceert bij strikte lezing voor ontruimingsoefeningen: per kostenplaats/locatie een aparte factuur (tenzij meerdere oefeningen op dezelfde kostenplaats in één maand gebundeld worden).
+- Huidige praktijk: trainingen worden maandelijks als totaalfactuur zonder kostenplaatsen gefactureerd; ontruimingsoefeningen worden verondersteld per locatie/ kostenplaats te gaan, maar historische facturen tonen dat soms meerdere locaties op een algemene kostenplaats zijn geboekt (inconsistentie, dus niet betrouwbaar als beleid).
+
+## Optie-evaluatie: één verzamelfactuur vs. per kostenplaats
+
+- Optie A (Verzamelfactuur): één maandfactuur met zowel trainingen als ontruimingsoefeningen, per item/aanhef de kostenplaats vermelden. Voordeel: minimale factuurlast en maximale automatisering. Risico: strijdig met “per factuur één kostenplaats” tenzij contractueel vrijgesteld; anders leidt dit tot verwerkingsblokkades.
+- Optie B (Strikte kostenplaatsdiscipline): per kostenplaats één factuur; trainingen op een centrale “opleidingskostenplaats” als dat contractueel zo is; ontruimingsoefeningen per locatie/ kostenplaats afzonderlijk. Voordeel: sluit naadloos aan op Serenlo’s systeemlogica en goedkeuringsflow. Nadeel: meer facturen, hogere verwerkingslast bij Berky en minder efficiëntie voor autofacturatie.
+- Synthetische uitkomst: de keuze is contract-gedreven. Zonder expliciete uitzondering blijft Optie B leidend; met een schriftelijke afwijking (addendum) kan Optie A veilig worden geïmplementeerd.
+
+## Minimale verwerkingsvereisten bij Serenlo
+
+- Eén kostenplaats per factuur is het standaardverwerkingskader.
+- De plaatsing van de kostenplaats op de factuur is flexibel (aanhef/relatienaam toegestaan), mits eenduidig en machineleesbaar.
+- Goedkeuringsflow en betaling hangen af van correcte basisgegevens (KVK, BTW, kostenplaats en factuuradres).
+
+------
+
+## Actielijst
+
+**@Erika Wesseling (Contractmanagement)**
+- [ ] Bevestig schriftelijk de contractuele facturatieregels: (a) of BHV-trainingen op een centrale opleidingskostenplaats mogen zonder per-locatie kostenplaats, (b) of ontruimingsoefeningen per locatie/ kostenplaats apart gefactureerd moeten worden, (c) of één maandelijkse verzamelfactuur met meerdere kostenplaatsen (per regel/aanhef) contractueel is toegestaan, of dat hiervoor een addendum vereist is. - [TBD]
+- [ ] Lever (indien nodig) een addendum dat toestaat: één verzamelfactuur per maand met meerdere kostenplaatsen, mits elke regel de juiste kostenplaats bevat. - [TBD]
+
+**@Danny (IT - Autofacturatie)**
+- [ ] Ontwerp twee configuraties voor autofacturatie: Scenario 1 (verzamelfactuur met kostenplaatsen per regel) en Scenario 2 (één factuur per kostenplaats), inclusief datavelden en validaties (kostenplaats, KVK, BTW) voor Serenlo’s scanportaal. - [TBD]
+- [ ] Bereid een snelle omschakelprocedure voor, zodat bij contractbesluit direct het juiste scenario live kan. - [TBD]
+
+**@Yvonne (Front Office / Facturatie)**
+- [ ] Maak een factuursjabloon voor Scenario 1 (verzamelfactuur) met expliciete kostenplaatsvermelding per item/aanhef en een sjabloon voor Scenario 2 (per kostenplaats aparte factuur). - [TBD]
+- [ ] Verzamel en label de actuele kostenplaatsnummers per Serenlo-locatie en valideer de dataset met Serenlo voordat automatisering wordt geactiveerd. - [TBD]
+
+**@Ryan (Crediteurenadministratie Serenlo)**
+- [ ] Bevestig na contractduiding de formele verwerkingscriteria (één kostenplaats per factuur; plaatsing kostenplaats in aanhef toegestaan) en deel eventuele aanvullende vereisten voor automatische verwerking. - [TBD]
+
+## Transcript
+00:00:12
+Hallo. Wat zo grappig bij jou, want jij zit altijd zo, als we bij jou bellen, wij zien jou altijd zo. Ik zal hem zo doen. Het lijkt wel of jullie veel hoger zitten dan ik. Of ik ben gewoon zo klein. Dat valt wel mee. Ik zal Danny ook eventjes, die had ook tijd, dus dat is mooi. Zo, even kijken Danny. Kijk, daar ben ik. Goedemiddag.
+00:00:47
+Goedemiddag. Rijn, ik zou echt willen dat we bij elke opdrachtgever iemand op de financiële afdeling halen zoals jij. Nou, dank voor het compliment. Je bent altijd zo toenaderbaar en je reageert snel. Dus bij deze even het compliment terug. Dank voor het compliment. Ander volbouw van vakantie uiteraard. Nee, maar we ervaren ook wel eens anders. Bedankt dat je mij even terugbelde en dat we nu even snel kunnen zitten, want Yvonne gaat na vandaag op vakantie en we hebben wat vragen rondom de factoratie vanuit Berky, dus vanuit Berky voor de BFV-trainingen.
+00:01:34
+Oké. Omdat onze collega's bij Fire Control, die hebben daar de facturatie ook weer overgenomen van een collega. En die geven eigenlijk aan, ja we doen het eigenlijk altijd zo, omdat we het altijd zo gedaan hebben. En toen dacht ik, nou misschien is het goed met Ryan om te checken hoe Serenlo het eigenlijk wil, wat er kan en dergelijke. Dus misschien even heel kort, want Yvonne is degene van de front office, dus die gaat zich ook wat meer bezighouden. met de facturatie. Die gaat Shadira wat ondersteuning bieden. Danny is van onze IT-afdeling en die.
+00:02:11
+bemoeit zich vooral nu met het stukje autofactoratie wat we aan het inrichten zijn. En ik bedien me, bemoei me met ongeveer alles. En dan zal ik jou ook, nou ja, misschien moet je jezelf, even voorstellen, Ryan, omdat ik heb anders misschien verkeerd gezegd wat je doet. Je hebt het aardig goed verteld hoor, maar goed, ik ben in ieder geval Ryan, ik ben 32 en ik werk nu al 2,5 jaar voor de crediteuradministratie van C&L en dat doe ik met heel veel plezier en mijn voornaamste taak is eigenlijk gewoon het verwerken van facturen en dat doe ik er nog wel eens iets bij, ik ben graag benaderbaar, dat compliment dat steek ik in ieder geval in mijn zak, dus bij deze zodoende zit ik hier in ieder geval.
+00:02:56
+Nou, top. Ik heb eigenlijk, ik denk, drie vragen voor je. En dan mag jij zeggen of ik het goed vertel of dat je het graag anders zou willen vanuit Cerelo. Op dit moment factoreren wij eigenlijk twee stromen als we het hebben over het BHV. En dat zijn de trainingen en de ontruimingsoefeningen. En nou begrijp ik dat we die, of ik dacht eerst dat we alle trainingen... Die factureerden we in een maandfactuur naar de moedermaatschappij, noem ik het maar.
+00:03:31
+De CRLO-contract heet dat bij ons, dus dat is gewoon één adres. En wij dachten dat de ontruimingen per locatie gefactureerd moeten worden. Maar nu werd in ons van de week duidelijk dat we die ook gewoon naar de moedermaatschappij, dus overkoepelend CRLO, moeten factureren. Maar dan wel de kostenplaats per locatie moeten vermelden. Dat is eigenlijk de eerste vraag. Dus moeten wij gewoon alles factureren naar, wij noemen dat dan de moedermaatschappij.
+00:04:05
+Dus het hoofdcontract. Dus dat is mijn eerste vraag. Voor zowel de trainingen als de ontruimingsoefeningen. Nou, dan moet ik een heel klein beetje al toch een beetje voorzichtig op de rem trappen. Want de contractafspraken, daar ben ik ook gewoon heel eerlijk in. Daar ben ik niet van op de hoogte. Waar ik wel van op de hoogte ben, is het feit dat wij als seroloog graag wensen per kostenplaats één factuur. Dat is in ieder geval de wens die wij altijd hebben eigenlijk.
+00:04:39
+Maar over de inhoudelijke invulling van het contract, dan moet ik je toch een klein beetje teleurstellen vandaag. Nee, dat geeft niks. We moeten ergens beginnen, Ryan. Ja, dat vind ik ook. Daar kun je het beste via Erika Wesseling. Ja, als contractmanager die heeft daar veel meer zicht op dan ik. Want even kijken, want nu, kijk, want de trainingen, dus hoe het nu gebeurt, is wel dat voor de trainingen wordt gewoon één totaalfactuur gestuurd voor de hele maand.
+00:05:10
+En daar zitten dan weer geen kostenplaatsen aan verbonden. Dus ik doe een beetje de aanname, maar misschien dat jij daar dus ook geen antwoord op mag geven, Rijmer. Dat dat van een soort algemeen BFV-budget afgaat. Maar dat de ontruimingsoefeningen dus door de locatie zelf betaald moeten worden. En dat wij daarom een kostenplaats moeten vermelden op het factuur bij de ontruimingsoefeningen. Ja, we horen inderdaad trainingen en dergelijke oefeningen. Die worden eigenlijk altijd wel vanuit een opleidingskostenplaats, noem ik het even, wordt dat meestal betaald.
+00:05:47
+Dus dat helemaal 100% zeker durf ik niet te zeggen. Dat heeft ook weer te maken met de contractafspraken. Daar kan Erika het beste antwoord op geven. Maar in het algemeen is het wel zo geregeld bij ons. Maar ook helaas, hier kan ik je geen 100% scoren geven. Moet ik in alle eerlijkheid zeggen. Ja, dan zouden we denk ik toch voor die vragen allemaal bij Erika moeten. Zo iemand voor de A. De autofacturatie, het scheelt voor ons gewoon als we bijvoorbeeld alles op één factuur zouden kunnen zetten.
+00:06:21
+Maar wel... Zeker, ja. Dus binnen facturen hoe beter. Ja, en dan bijvoorbeeld gewoon wel dat we dus als er een ontruimingsoefening is geweest in Ermelo, dat we dan Ermelo vermelden met de kostenplaats van Ermelo erachter. Maar dat voor het geautomatiseerd factureren voor ons, zou dat gewoon schelen als dat... Eén keer per maand op één totaalfactuur verstuurd kan worden. Maar ik begrijp dus uit jouw toelichting dat ik dat dan met Erika even moet...
+00:06:52
+Ja, voor de absolute zekerheid zou ik dat zeker willen aanraden. Ik vind het net wat te spannend om hier een goed... Ik wil ook een goed antwoord geven. En als ik geen goed antwoord heb, dan geef ik liever geen antwoord. Dus vandaar in de voorzichtigheid. Het beste is om dat even met Erika te checken. Die is echt op de hoogte. Van het contract. Ik weet ook niet wat er in het contract of in de afspraken staat. Ik weet alleen hoe wij graag een factuur willen zien. Maar ja volgens mij is dat bij jullie min of meer al wel bekend. Behalve dus het feit van hoe moeten die contractafspraken dan gefactureerd worden.
+00:07:25
+Ja we zoeken een beetje. Omdat we dus vooral met die automatische facturatie willen we het gewoon goed inrichten. En nu merken wij, nu we wat meer op de details zitten, dat er gewoon te veel vragen zijn. Waar we dus het altijd kregen, ja zo hebben we het altijd gedaan. En daarom dacht ik, nou dan is het even goed om terug naar de bron te gaan. Ik ga heel even snel kijken in het mapje. Want we hebben wel getekende overeenkomst, maar daar zit niet iets van facturatie eisen in.
+00:07:57
+Maar dan zal ik even met, want Erika is volgens mij herstellende van een operatie. Weet jij of ze alweer aan het werk is? Dan moet ik wel even spieken nu. Ja, dat is goed. Ik moet me heel eerlijk zeggen dat ik haar inderdaad ook al een tijdje niet... Ik was op de hoogte van dat, maar ik zit even te kijken of mijn computer dat ook wil. Ja, als ik het even snel zie, ik kan het gewoon even met jullie delen. Ik heb even het contract erbij gezocht. Maar dan nog zal ik Erika moeten vragen hoor, want...
+00:08:30
+Ja, ze is niet aanwezig zie ik, maar ik heb ook geen zicht op... Nou, ik weet dat het mij... Ik heb wel een contactpersoon, maar die is hard langer en ik neem dan aan dat ik dat dan ook niet. Maar hier staat facturen dienen in pdf aangeleverd te worden per e-mail één factuur. Dat is prima, dat zou dus eigenlijk één maand factuur kunnen zijn in ons geval. Per factuur maximaal één kostenplaats. Dat is dan wel weer anders, want voor de ontruimingsoefeningen zou je eigenlijk per ontruimingsoefening los moeten gaan factureren.
+00:09:03
+Maar ik ga dat dan even checken. Ja, want zo interpreteer ik het wel namelijk. Vandaar dat we dus ook meerdere leveranciers waar we contracten mee hebben. Maar hoe dat dan geregeld is, weet ik niet. Maar als ik nu zou zeggen, doe maar één kostenplaats per factuur, dan is het inderdaad heel zwart-wit. Per ontruimingsoefening één factuur. Maar dus daarom zou ik het zeker even checken. Ik wil natuurlijk ook veel minder facturen. Dus ik ben er alleen maar voorstander van als dat zou lukken. En dat is dan wel belangrijk om van jou, kijk, want jij moet ze uiteindelijk verwerken.
+00:09:36
+En als jij zegt als verwerker, mij maakt het niet uit als alles op één factuur staat. Dus de trainingen en de ontruimingsoefeningen, mits er bij de ontruimingsoefeningen maar dus een kostenplaats vermeld staat. Ik weet ook niet hoe jij het verwerkt. Ga jij het handmatig weer verdelen over elke locatie? Of? Nou, wij boeken gewoon een factuur en een kostenplaats. Eigenlijk is het heel zwart-wit. Is dat het eigenlijk? Dat is het enige wat ik doe.
+00:10:06
+Ik kies nog een grootboeknummer en iemand moet hem goedkeuren. Dat is eigenlijk alles wat wij hier doen. Ja, maar je krijgt... Vaak factuurverwerking. En er gaat natuurlijk ook heel veel automatisch. Nou, ik ben daar vooral mee bezig. Dus ik wil het automatiseren. En dan helpt het natuurlijk als we heel weinig facturen krijgen. Ja. Dus ja, wat mij betreft is het gewoon... Heel simpel, maar goed, wat ik zeg, check zeker even met Erika of de gevangenen van Erika. Maar het is dan, kijk, om het voor jou duidelijk te maken, want stel dat Erika zegt, prima, als Rijn het prettig vindt om op één factuur, dan is dat goed.
+00:10:42
+Dan gaan we dat ook vastleggen en dan krijgen we later nooit meer vragen over. Maar dan zou het zo zijn, hypothetisch, want als je alles op één factuur krijgt, ja, dat kunnen wel tig pagina's zijn, want het is in één maand. Zijn het best veel trainingen en ontruimingsoefeningen. Maar als jij aangeeft dat maakt niet uit. Dan als dat beeld maar helder is. Zolang het maar in kostenplaats is. En dat is dus ook hetgeen waar ik over twijfel. En daar zit ook weer heel veel verschil in denk ik per dienst.
+00:11:14
+Ja. Nee, oké. Dus dan slakken we. Als dat leidend is, dan ontkom je er niet aan om eigenlijk per ontruimingsoefening gewoon één vak, krijg je echt voor één ontruimingsoefening één factuur, omdat per de relaties, of ze moeten in de maand meerdere oefeningen gedaan hebben. Dus eigenlijk, ja, denk ik Danny dat dat het wel is, maar moet het factuur dan, dat moet wel gewoon naar... Serenlo, de moedermaatschappij, gestuurd worden.
+00:11:45
+En niet direct... Ja, facturen en Serenlo. Ja, die mag gewoon naar ons algemene mailadres. Facturen en Serenlo. En dan komt het helemaal goed. Dan wordt het automatisch in het systeem gezet. En dan verwerken wij ze zo snel mogelijk. En met jullie systeem scant dan die kostenplaats. Koppelt die dat dan heel even aan de goede locatie? Ja, we hebben eigenlijk twee systemen. We hebben een scanportaal inderdaad en dan komen de facturen bij ons binnen. Die worden ingelezen, vervolgens geïmporteerd in het systeem en vanuit daar gaan we die facturen eigenlijk controleren op zijn ze voor ons. Is het een factuur voor Serenlo, staat er een kostenplaats op?
+00:12:27
+Wettelijke eisen natuurlijk, KVK, BTW nummer en ga zo maar door. En als dat allemaal in orde is, dan gaan ze naar het tweede systeem en daar worden ze eigenlijk verstuurd naar. Naar de budgethouder, die moet hem dan goedkeuren of afkeuren. En als het allemaal door de molen heen is, door de goedkeuringsflow, dan worden ze betaald. Ja. Dus dat is het eigenlijk. Ja, maar dan zal ik dus even met Erika checken, want ik weet dat voor de ontruimingen, dat we daar dus echt kostenplaats vermelden. Maar voor zover ik weet, bij de trainingen niet namelijk.
+00:12:60
+En dat is gewoon één groot verzamelfactuur. Dus dat zal ik nog... Checken en nogmaals, ik denk dat daar gewoon het wordt geboekt op de opleidingspot of de BV-pot van Cerelo Breed en dat die ontruimingsoefeningen van de lokaal budget van de locaties afgaan. Want daar mogen ze ook zelf in kiezen namelijk of ze dat zelf doen of dat wij het verzorgen. Ja, ik zat toevallig even ondertussen al even te kijken naar wat facturen die ik in het verleden heb gekregen. Want dat is ook weer een andere...
+00:13:31
+Ik zeg, in onze boekhouding is BERC, die opleiding en advies, is dat een andere tak dan BERC, die brandbeveiliging. Klopt dat nog steeds? Ja, want BERC is dan voor de blusmiddelen. Dus het zijn een hele andere facturen dan voor de opleiding en advies. Ja, precies. Want ik zie hier inderdaad dat ik heb hier een factuur voor me van begin dit... Oh nee, begin vorig jaar zelfs. En daarin staan ontruimingsoefeningen. Van meerdere locaties. En dat wordt dan op een algemene kostenplaats gezet.
+00:14:02
+Zo was het in januari 25. Maar ik zie dat ik al een tijdje geen facturen van opleiding en advies heb gehad. Nee, vandaar dat we dit nu aan het uitzoeken zijn. Maar dan zeg je het ook wel weer anders. Want als jij dan toen... Dat het één kostenplaats is. Ja, bij een andere factuur zie ik het ook. Dan zie ik een BHV-training in Urk. En we gaan van Urk naar Geldermalsen. En dan gaan we naar Druten, zie ik. Ja, maar dat is dan een BHV-training.
+00:14:36
+Dus dat zou ik in het algemene. En je hebt dan ook echt oefeningen. Dus een ontruiming. En ik denk dat die per locatie een eigen kostenplaats hebben. Kijk, dat kan ik niet zo snel zien, helaas. Nee, maar het begreep van onze collega is dat zo. Maar ik zal dat ook met Erika checken. Ik denk dat die die afspraken goed heeft. Of met haar vervanger, maar ik wil kijken wat die erover kan zeggen. Dus bedankt tot zover denk ik. Yvonne, Danny, nog vragen?
+00:15:17
+Nee, voor dit moment is het best wel duidelijk. Ik ga er ook wel vanuit dat de oefeningen echt apart moeten, omdat als je verschillende kostenplaatsen hebt, kan je het niet één op één doorzetten naar de locatie waarvan het is. Dus ja, ik ga er vanuit dat dat niet gaat werken of ze moeten tot een heel andere werkwijze komen, maar daar heb ik mijn twijfels over of dat gaat gebeuren. Dus ja, het is alvast fijn dat heel trainingen natuurlijk op één maand factuur mag. En misschien wel handig is dat zowel de oefeningen als de trainingen naar de moedermijn mogen.
+00:15:49
+Ik denk dat dat misschien wel weer scheelt in het verwerken ervan. Maar dat gaat de toekomst leren. Oké. Ik heb er nog twee, maar ik weet dus even niet of Ryan die gaat beantwoorden of dat ook iets is voor Erika. Eén, moeten het echt twee aparte facturen zijn? Of mag het gewoon één factuur zijn als we op de een of andere manier de oefeningen duidelijker kunnen weergeven? En of die kostenplaats gewoon in de naam van de relatie mag staan. Want even plat gezegd, als wij de relatie namen aanpassen en daar meteen de kostenplaatsnummer vermelden.
+00:16:21
+Dan krijg je op je factuur gewoon één verzamelfactuur. En daar staan dan oefeningen, trainingen, alles bij elkaar. Maar er staat wel overal gewoon de kostenplaats van de locatie erbij. Dan is dat voor ons eigenlijk de meest makkelijke oplossing. Dat laatste mag sowieso natuurlijk. De kostenplaats moet op de factuur staan. En dat maakt ons niet... Uit waar die precies staat. Als dat voor jullie werkt. Dan is dat natuurlijk alleen maar goed. Maar hij staat dan wel. Maar hij staat dan wel ook bij trainingen erop. Ik doe even de aanname dat dat niks uitmaakt.
+00:16:52
+Omdat dat goed is. Maar ik wil dat graag zeker weten. Voordat wij iets gaan aanpassen. Ik zou inderdaad wel even de contractafspraken. Bij Erika checken. Als daar uiteindelijk geen afwijking in zit. Dan zou het gewoon in de aanhef kunnen. Wat ons betreft. Zeker. He top, dan ga ik kijken of ik Erika of via Mike dat eventjes naar boven kan halen. En dan bedankt, zou ik zeggen, Rijn, voor je tijd.
+00:17:24
+Jullie ook, bedankt. En een hele fijne dag verder. Jij ook, Rijn. Jij ook. Doei.
